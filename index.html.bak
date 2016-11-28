@@ -69,14 +69,9 @@
 		<div class="row banner-container">
 			<div class="col-sm-12">
 				
-<!--                        
-<SCRIPT language="JavaScript">var e9 = new Object();e9.size = "160x600";e9.noAd = 1;e9.playTrackURL = 'https://devstaging.tribalfusion.com:1182/adapp/tf/campaign/play/3980834X6692195X6547136/';e9.clickTrackURL = 'https://devstaging.tribalfusion.com:1182/adapp/tf/campaign/click/3980834X6692195X6547136/';e9.flushMedia = 1;</SCRIPT><SCRIPT TYPE="text/javascript" SRC="https://devstaging.tribalfusion.com/tags/XeCom/homepage/tags.js"></SCRIPT> -->
-                                                       
+                                                                                
                 <!-- new -->
                                                                 <!-- -->
-					<SCRIPT language="JavaScript">var e9 = new Object();e9.size = "970x250";e9.noAd = 1;e9.adApp = 1;e9.mediaType = 22;e9.mediaDataID = 6686586;e9.clientID = 694213;e9.playTrackURL = 'http://www.tribalfusion.com/adapp/tf/campaign/play/4049494X6829695X6686586/';e9.clickTrackURL = 'http://www.tribalfusion.com/adapp/tf/campaign/click/4049494X6829695X6686586/';e9.flushMedia = 1;</SCRIPT><SCRIPT TYPE="text/javascript" SRC="http://a.tribalfusion.com/tags/AdApp/ads/tags.js"></SCRIPT>
-
-
 			</div>
 		</div>
 
@@ -106,7 +101,7 @@
 please use these tags :
 
 
-
+<SCRIPT language="JavaScript">var e9 = new Object();e9.size = "300x250";e9.noAd = 1;e9.adApp = 1;e9.mediaType = 22;e9.mediaDataID = 6531116;e9.clientID = 700363;e9.playTrackURL = 'https://devstaging.tribalfusion.com/adapp/tf/campaign/play/4012524X6676355X6531116/';e9.clickTrackURL = 'https://devstaging.tribalfusion.com/adapp/tf/campaign/click/4012524X6676355X6531116/';e9.flushMedia = 1;</SCRIPT><SCRIPT TYPE="text/javascript" SRC="https://devstaging.tribalfusion.com/tags/AdApp/ads/tags.js"></SCRIPT>
 						</div>
 						<img class="img-responsive img-rounded HIDE_WHEN_300x250_IS_VISIBLE" src="http://expotask.adotube.com/public/common/images/category/lifestyle//transport_002.jpg" style="float: right; margin: 0 0 10px 10px">
 						<p>Mauris sit amet ornare risus. Etiam eu pharetra nisi, id fermentum augue. Pellentesque id lorem ac justo scelerisque interdum eget non dui. Aenean ut est accumsan, iaculis velit id, tristique mauris.</p>
