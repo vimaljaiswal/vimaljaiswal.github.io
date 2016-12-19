@@ -1,0 +1,33 @@
+
+
+	<script type="text/javascript">
+		//the acutal library object, mandatory
+	  var nxtjs = {
+			memoryInitializerPrefixURL: "js/lib/brf/" // + BRF_NXT_v3.x.y_trial.js.mem is done in the other js file.
+		};
+		
+	  function textclicked(){
+		document.getElementById('simpletxt').style.display='none' 
+		initExample()
+	   }
+	</script>
+	
+	<script type="text/javascript" src="js/lib/createjs/easeljs-0.7.1.min.js"></script>
+	<script type="text/javascript" src="js/lib/createjs/preloadjs-0.4.1.min.js"></script>
+	<script type="text/javascript" src="js/lib/createjs/bitmapdata-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/lib/brf/BRF_NXT_public_API.js"></script>
+	<script type="text/javascript" src="js/lib/brf/BRF_NXT_JS_TK200215_v3.0.16_trial.js"></script>
+	<script type="text/javascript" src="js/examples/ExampleBase.js"></script>
+    <script type="text/javascript" src="js/examples/ExampleFaceTracking.js"></script>
+ 
+
+  
+<div align="center" id="simpletxt">  
+  <font face="Cambria">
+    <a href="#" onClick="textclicked()" >Click Here to Experience BRF based Face Detection Feature</a>
+  </font>
+</div>
+
+<canvas id="_stage" width="968" height="450"   >Your browser does not seem to support canvas elements.</canvas>
+ 
+ 
