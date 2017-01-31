@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test</title> 
+
+
+<link type="text/css" rel="stylesheet" href="./files/main3.css" media="all"> <!--- main CSS  -->
+
+<script type="text/javascript" src="./files/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="./files/mixing.js"></script>
+<script type="text/javascript" src="./files/main.js"></script>
+<script type="text/javascript" src="./files/test.js"></script>
+<script type="text/javascript">
+    function timerCalled(timer){
+        
+        console.log("timer called ....   "+timer)
+    }
+    
+        function chkRollover(){
+        
+        console.log("tchkRollover ....   ")
+    }
+    
+           function chkRollout(){
+        
+        console.log("tchkRollout ....   ")
+    }
+    </script>
+    
+    <script type="text/javascript">
+  /*  var t = document.getElementsByClassName("fiftyBanner");//i only have one element with that tag so...
+    //if you are going to put more you can loop through them
+        console.log("onmouseover   "+t);
+   // prepareRollOver(t);//call the function to prepare the rollover
+    function prepareRollOver(target){
+       target.onmouseover = function (){
+            //img = this.getElementsByTagName("img")[0];//only one img expected, so take the first of the array
+            console.log("onmouseover");
+       }
+       target.onmouseout = function (){
+           // img = this.getElementsByTagName("img")[0];//only one img expected, so take the first of the array
+           console.log("onmouseout");
+       }
+    }*/
+</script>
+
+</head>
+
+<body>
+
+<div class="region" style="width:970px; height:250px;">
+        	<div class="container">
+                            <div class="row">
+                    <div class="col12 m-col12 s-col12 xs--col12">
+                <div class="fifty50Banner">
+                    <ul id="sliderCont">
+                        <li style="width: 485px; height: 250px;">
+                            <div class="fiftyBanner" id = "test" onMouseOut="chkRollover()" onMouseOver="chkRollout()">
+	
+<video loop video autoplay muted class="ui-video-Container" id = "videoContainerName" >
+  <source src="./files/video5.mp4" type="video/mp4">
+</video>
+                                               						 <!--  <img src="./files/video1.jpg" alt="test" title="testimg"> -->
+                
+                 
+                                <div class="caption">
+                       <!--    <h4>Demo Image</h4>
+                                    <p>demo text</p> -->
+                            </div>
+                            </div>
+                        </li>
+                        <li id = "test2" style="width: 970px; height: 250px;">
+                            <div class="fiftyBanner" onMouseOut="chkRollover()" onMouseOver="chkRollout()">
+
+                                                                <img src="./files/video114.jpg" alt="test2" title="testImg2" id = "imgContainerName" >
+                               
+                 
+                                <div class="caption">
+                                    <h4></h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <span id="dividerBtn" class="ui-draggable-handle" style="width: 2px; right: auto; left: 485px; top: 0px;">
+                        <span class="touchBtn"></span>
+                        <span id="indicator" style="display: none;">Drag the button to Left &amp; Right</span>
+                    </span>
+                </div>
+                </div>
+                </div>
+                            </div>
+ </div>
+
+</body>
+</html>
