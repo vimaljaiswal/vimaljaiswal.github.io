@@ -14,10 +14,10 @@
 
     function chkRollover(event) {
         if (event.id == "test") {
-            // console.log("tchkRollover .... video  ")
+             console.log("tchkRollover .... video  ")
         }
         else {
-            //console.log("tchkRollover .... image  " + event.id)
+            console.log("tchkRollover .... image  " + event.id)
         }
     }
 

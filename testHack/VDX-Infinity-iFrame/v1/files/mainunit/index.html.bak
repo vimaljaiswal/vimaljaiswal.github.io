@@ -42,7 +42,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
                                 <!--ignoreBlock: End-->
                              
  </head>
- <body sytle="width:485px; height: 250px;">
+ <body>
 
   <div class="clearfix" id="page"><!-- group -->
    <div class="grpelem" id="u5084"><!-- custom html -->
