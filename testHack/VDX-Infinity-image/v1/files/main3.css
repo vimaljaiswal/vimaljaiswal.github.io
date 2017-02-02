@@ -1,0 +1,226 @@
+/*@import url("styles/modules/m_fifty50Banner.css");*/
+
+.fifty50Banner {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1.25em;
+}
+
+.fifty50Banner ul li .fiftyBanner img {
+    height: 250px;
+    background-position: left top;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fifty50Banner ul li .fiftyBanner video {
+    object-fit: initial;
+    height: 300px;
+}
+
+.fifty50Banner #blankDiv {
+    width: 200px;
+    right: auto;
+    left: -95px;
+    top: 0px;
+    z-index: 14;
+    position: absolute;
+    display: block;
+    height: 250px;
+}
+
+.fifty50Banner #dividerBtn {
+    width: 2px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    z-index: 15;
+    margin: 0 -1px;
+    background: #fff;
+    cursor: move;
+    display: block;
+}
+
+.fifty50Banner #dividerBtn #indicator {
+    display: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(5, 15, 5, .6);
+    font-size: 0.75em;
+    color: #000;
+    border: 1px solid #fff;
+    background: #fff;
+    position: absolute;
+    width: 200px;
+    top: 60%;
+    left: 50%;
+    margin: 0 -100px;
+    animation: jump 1.5s infinite;
+    -webkit-animation: jump 1.5s infinite;
+}
+
+.fifty50Banner #dividerBtn .touchBtn {
+    width: 44px;
+    height: 44px;
+    background: url(../img/icons/drag-icon.png) no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22px;
+    background-size: cover;
+}
+
+.fifty50Banner ul {
+    position: relative;
+    height: 250px;
+
+}
+
+.fifty50Banner ul li {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 5;
+    overflow: hidden;
+    height: 100%;
+}
+
+.fifty50Banner ul li .fiftyBanner {
+    /*width:1180px;	*/
+    height: 250px;
+    overflow: hidden;
+}
+
+.fifty50Banner ul li img {
+    /* object-fit: initial;
+	max-width:970px;
+	width:100%;
+	height:250px;
+	display:block;	
+	position:relative;*/
+}
+
+.fifty50Banner ul li .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fifty50Banner ul li .caption h4 {
+    font-size: 2.5em;
+    color: #fff;
+    line-height: 1.125em;
+    width: 6.5em;
+    position: absolute;
+    top: 60%;
+    left: 26%;
+}
+
+.fifty50Banner ul li .caption p {
+    color: #fff;
+    font-size: 0.9375em;
+    line-height: 1.6667em;
+    width: 22em;
+    position: absolute;
+    top: 24%;
+    right: 5%;
+}
+
+.fifty50Banner ul li:first-child {
+    width: 50%;
+    z-index: 10;
+}
+
+@media only screen and (min-width: 48em) and (max-width: 63.9375em) {
+    .fifty50Banner ul li .caption {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        min-height: 100%!important;
+        background: #2c6b9d;
+        padding: 10px;
+    }
+    .fifty50Banner ul li .caption h4,
+    .fifty50Banner ul li .caption p {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto
+    }
+    .fifty50Banner ul li .caption h4 {
+        font-size: 2em;
+        width: auto;
+        margin-bottom: 0em;
+    }
+    .fifty50Banner ul li .caption p {
+        font-size: 0.8125em;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+    .fifty50Banner ul li .caption {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: auto;
+        min-height: 100%;
+        margin: 0px;
+        background: #2c6b9d;
+        padding: 5%;
+    }
+    .fifty50Banner ul li .caption h4,
+    .fifty50Banner ul li .caption p {
+        position: relative;
+        top: 0;
+        left: auto;
+        right: auto
+    }
+    .fifty50Banner ul li .caption h4 {
+        font-size: 2em;
+        width: auto;
+        margin-bottom: 0em;
+    }
+    .fifty50Banner ul li .caption p {
+        font-size: 0.8125em;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 20em) and (max-width: 29.9375em) {
+    .fifty50Banner ul li .caption {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: auto;
+        min-height: 100%;
+        background: #2c6b9d;
+        padding: 5%;
+    }
+    .fifty50Banner ul li .caption h4,
+    .fifty50Banner ul li .caption p {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto
+    }
+    .fifty50Banner ul li .caption h4 {
+        font-size: 1em;
+        width: auto;
+        margin-bottom: 0em;
+    }
+    .fifty50Banner ul li .caption p {
+        font-size: 0.8125em;
+        width: auto;
+    }
+}
