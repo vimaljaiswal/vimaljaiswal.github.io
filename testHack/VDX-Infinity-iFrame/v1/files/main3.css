@@ -13,7 +13,7 @@
 }
 
 .fifty50Banner ul li:last-child {
-    z-index: 12;
+    
     object-fit: initial;
     height: 250px;
     background-position: left top;
