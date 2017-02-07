@@ -90,7 +90,7 @@
   if(trackMainUnitClosed == true){
 	   trackMainUnitClosed = false;
 	   displayText();
-	   callMainUnit(500,500,4400);
+	   //callMainUnit(500,500,4400);
 	   $("#indicator").fadeIn(1000);
        document.getElementById("dividerBtn").style.left = 485 + "px";
        document.getElementById("videoContainerName").style.width = 485 + "px";
