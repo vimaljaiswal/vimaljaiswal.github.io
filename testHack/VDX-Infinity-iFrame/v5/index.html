@@ -1,0 +1,1507 @@
+<html><head><style>
+
+    .animate {
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 1s;
+    }
+    
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+</style>
+
+<script>var queryParams =(function parseQuery() {
+var a=window.location.href.substr(1).split("&")
+if (a == "") return {};
+var b = {};
+for (var i = 0; i < a.length; ++i)
+{
+    var p=a[i].split("=", 2);
+    if (p.length == 1)
+        b[p[0]] = "";
+    else
+        b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+}
+return b;
+})();
+</script></head><body>
+     
+	 
+	 <script>
+           
+	
+        </script>
+    <script src="publisher.3.0.js"></script>
+    <!-- plugins -->
+
+    <script type="text/javascript">
+        var isFiredComScore = false;
+        var comScorePixelUrl = "$COMMON$floating/comscore.html";
+        var debug2 = new Image();
+        debug2.src =
+            "http://$WEBSERVERHOST$/insights/impression?client=$CLIENTID$&campaign=<mediaName>($MEDIAID$)&mediaSource=VDX&mediaSubSource=Display&creative=queryParams.wxqueryParams.h&event=Debug2&ord$RND$&custom1=jsver:1.0.0&custom2=buyID:$BUYID$;mediaID:$MEDIAID$;ord:$RND$;adspaceId:$ADSPACEID$&custom3=$DEVICEPROP$";
+    </script>
+    <script type="text/javascript">
+        if (!window.EUGUIDGenerator) {
+            var EUGUIDGenerator = function guid() {
+                function s4() {
+                    return Math.floor((1 + Math.random()) * 0x10000)
+                        .toString(16)
+                        .substring(1);
+                }
+                return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+                    s4() + '-' + s4() + s4() + s4();
+            }
+        }
+        (function() {
+            var rnd = EUGUIDGenerator();
+            var location = '';
+            var assetUrl = '';
+            var museUrl = '';
+            var common = '$COMMON$';
+            var isFiredComScore = true;
+            var comScorePixelUrl = "$COMMON$floating/comscore.html";
+            window['teaserTracker' + rnd] = {
+                "impression": {
+                    "imp": {
+                        "trackers": [{
+                            "pixel": "$PLAY$",
+                            "type": "img"
+                        }, {
+                            "pixel": "impLive",
+                            "type": "img"
+                        }]
+                    }
+                },
+                "phaze": {
+                    'paused-teaser_vpm_closebtnclick': { //done
+                        custom1: ['PausedTeaser', 'VPM'],
+                        'referrer': 'VPM',
+                        'trigger': 'CloseAd',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }, {
+                            "type": "img",
+                            pixel: 'CloseLive'
+                        }]
+                    },
+                    'paused-teaser_mainunit_closebtnclick': { //done
+                        custom1: ['PausedTeaser', 'MainUnit'],
+                        'referrer': 'MainUnit',
+                        'trigger': 'CloseAd',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }, {
+                            "type": "img",
+                            pixel: 'CloseLive'
+                        }]
+                    },
+                    'paused-collapsed-teaser_vpm_closebtnclick': { //done
+                        custom1: ['PausedCollapsedTeaser', 'VPM'],
+                        'referrer': 'VPM',
+                        'trigger': 'CloseAd',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }, {
+                            "type": "img",
+                            pixel: 'CloseLive'
+                        }]
+                    },
+                    'paused-collapsed-teaser_mainunit_closebtnclick': { //done
+                        custom1: ['PausedCollapsedTeaser', 'MainUnit'],
+                        'referrer': 'MainUnit',
+                        'trigger': 'CloseAd',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }, {
+                            "type": "img",
+                            pixel: 'CloseLive'
+                        }]
+                    },
+                    'teaser_loading_loaded': { //done
+                        custom1: 'Teaser',
+                        'referrer': 'loading',
+                        'trigger': 'loaded',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+
+                    'paused-collapsed-teaser_paused-teaser_transitioncomplete': { //done
+                        custom1: 'PausedCollapsedTeaser',
+                        'referrer': 'PausedTeaser',
+                        'trigger': 'CloseAd',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    'vpm_teaser_timecomplete': {
+                        custom1: 'VPM',
+                        'referrer': 'Transition2VPM',
+                        'trigger': 'TransitionComplete',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    'vpm_collapsed-teaser_timecomplete': {
+                        custom1: 'VPM',
+                        'referrer': 'Transition2VPM',
+                        'trigger': 'TransitionComplete',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    'mainunit_vpm_timecomplete': {
+                        custom1: 'MainUnit',
+                        'referrer': 'Transition2MainUnit',
+                        'trigger': 'TransitionComplete',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+
+
+                    //                'collapsed-teaser_teaser_transitioncomplete': {
+                    //                    custom1: 'collapsedTeaser',
+                    //                    'referrer': 'Teaser',
+                    //                    'trigger': 'CloseAd',
+                    //                    trackers: [{
+                    //                        "type": "img",
+                    //                        pixel: 'Stage'
+                    //                    }]
+                    //                },
+
+                }
+
+            };
+
+            window['fullscreenTracker' + rnd] = {
+
+                "engagement": {
+                    'eng': {
+                        "trackers": [{
+                            "pixel": "ExpandLive",
+                            "type": "img"
+                        }, {
+                            "pixel": "EngLive",
+                            "type": "img"
+                        }, {
+                            "pixel": "$CLICK$",
+                            "type": "img"
+                        }]
+                    }
+
+                },
+                "deepEngagement": {
+                    "eng": {
+                        "trackers": [{
+                            "pixel": "DeepEng",
+                            "type": "img"
+                        }]
+                    }
+                },
+                "videos": {
+                    trackers: {
+                        "click": {
+                            "trackers": [{
+                                "pixel": "clickLive",
+                                "type": "img"
+                            }, {
+                                "pixel": "",
+                                "type": "js"
+                            }]
+                        }
+
+                    },
+                    "video1": {
+                        "custom1": "video1",
+                        "start": {
+                            "trackers": [{
+                                "pixel": "0pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "firstquartile": {
+                            "trackers": [{
+                                "pixel": "25pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "secondquartile": {
+                            "trackers": [{
+                                "pixel": "50pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "thirdquartile": {
+                            "trackers": [{
+                                "pixel": "75pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "complete": {
+                            "trackers": [{
+                                "pixel": "100pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "mute": {
+                            "trackers": [{
+                                "pixel": "MuteLive",
+                                "type": "img"
+                            }]
+                        },
+                        "unmute": {
+                            "trackers": [{
+                                "pixel": "UnmuteLive",
+                                "type": "img"
+                            }]
+                        },
+                        "paused": {
+                            "trackers": [{
+                                "pixel": "PauseLive",
+                                "type": "img"
+                            }]
+                        },
+                        "rewind": {
+                            "trackers": [{
+                                "pixel": "RewindLive",
+                                "type": "img"
+                            }]
+                        },
+                        "resume": {
+                            "trackers": [{
+                                "pixel": "ResumeLive",
+                                "type": "img"
+                            }]
+                        },
+                        "replay": {
+                            "trackers": [{
+                                "pixel": "ReplayLive",
+                                "type": "img"
+                            }]
+                        },
+                        "fullscreen": {
+                            "trackers": [{
+                                "pixel": "FSLive",
+                                "type": "img"
+                            }]
+                        }
+                    },
+                    "video2": {
+                        "custom1": "video2",
+                        "start": {
+                            "trackers": [{
+                                "pixel": "0pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "firstquartile": {
+                            "trackers": [{
+                                "pixel": "25pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "secondquartile": {
+                            "trackers": [{
+                                "pixel": "50pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "thirdquartile": {
+                            "trackers": [{
+                                "pixel": "75pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "complete": {
+                            "trackers": [{
+                                "pixel": "100pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "mute": {
+                            "trackers": [{
+                                "pixel": "MuteLive",
+                                "type": "img"
+                            }]
+                        },
+                        "unmute": {
+                            "trackers": [{
+                                "pixel": "UnmuteLive",
+                                "type": "img"
+                            }]
+                        },
+                        "paused": {
+                            "trackers": [{
+                                "pixel": "PauseLive",
+                                "type": "img"
+                            }]
+                        },
+                        "rewind": {
+                            "trackers": [{
+                                "pixel": "RewindLive",
+                                "type": "img"
+                            }]
+                        },
+                        "resume": {
+                            "trackers": [{
+                                "pixel": "ResumeLive",
+                                "type": "img"
+                            }]
+                        },
+                        "replay": {
+                            "trackers": [{
+                                "pixel": "ReplayLive",
+                                "type": "img"
+                            }]
+                        },
+                        "fullscreen": {
+                            "trackers": [{
+                                "pixel": "FSLive",
+                                "type": "img"
+                            }]
+                        }
+                    },
+                    "video3": {
+                        "custom1": "video3",
+                        "start": {
+                            "trackers": [{
+                                "pixel": "0pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "firstquartile": {
+                            "trackers": [{
+                                "pixel": "25pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "secondquartile": {
+                            "trackers": [{
+                                "pixel": "50pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "thirdquartile": {
+                            "trackers": [{
+                                "pixel": "75pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "complete": {
+                            "trackers": [{
+                                "pixel": "100pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "mute": {
+                            "trackers": [{
+                                "pixel": "MuteLive",
+                                "type": "img"
+                            }]
+                        },
+                        "unmute": {
+                            "trackers": [{
+                                "pixel": "UnmuteLive",
+                                "type": "img"
+                            }]
+                        },
+                        "paused": {
+                            "trackers": [{
+                                "pixel": "PauseLive",
+                                "type": "img"
+                            }]
+                        },
+                        "rewind": {
+                            "trackers": [{
+                                "pixel": "RewindLive",
+                                "type": "img"
+                            }]
+                        },
+                        "resume": {
+                            "trackers": [{
+                                "pixel": "ResumeLive",
+                                "type": "img"
+                            }]
+                        },
+                        "replay": {
+                            "trackers": [{
+                                "pixel": "ReplayLive",
+                                "type": "img"
+                            }]
+                        },
+                        "fullscreen": {
+                            "trackers": [{
+                                "pixel": "FSLive",
+                                "type": "img"
+                            }]
+                        }
+                    },
+                    "video4": {
+                        "custom1": "video4",
+                        "start": {
+                            "trackers": [{
+                                "pixel": "0pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "firstquartile": {
+                            "trackers": [{
+                                "pixel": "25pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "secondquartile": {
+                            "trackers": [{
+                                "pixel": "50pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "thirdquartile": {
+                            "trackers": [{
+                                "pixel": "75pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "complete": {
+                            "trackers": [{
+                                "pixel": "100pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "mute": {
+                            "trackers": [{
+                                "pixel": "MuteLive",
+                                "type": "img"
+                            }]
+                        },
+                        "unmute": {
+                            "trackers": [{
+                                "pixel": "UnmuteLive",
+                                "type": "img"
+                            }]
+                        },
+                        "paused": {
+                            "trackers": [{
+                                "pixel": "PauseLive",
+                                "type": "img"
+                            }]
+                        },
+                        "rewind": {
+                            "trackers": [{
+                                "pixel": "RewindLive",
+                                "type": "img"
+                            }]
+                        },
+                        "resume": {
+                            "trackers": [{
+                                "pixel": "ResumeLive",
+                                "type": "img"
+                            }]
+                        },
+                        "replay": {
+                            "trackers": [{
+                                "pixel": "ReplayLive",
+                                "type": "img"
+                            }]
+                        },
+                        "fullscreen": {
+                            "trackers": [{
+                                "pixel": "FSLive",
+                                "type": "img"
+                            }]
+                        }
+                    },
+                    "video5": {
+                        "custom1": "video5",
+                        "start": {
+                            "trackers": [{
+                                "pixel": "0pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "firstquartile": {
+                            "trackers": [{
+                                "pixel": "25pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "secondquartile": {
+                            "trackers": [{
+                                "pixel": "50pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "thirdquartile": {
+                            "trackers": [{
+                                "pixel": "75pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "complete": {
+                            "trackers": [{
+                                "pixel": "100pcLive",
+                                "type": "img"
+                            }]
+                        },
+                        "mute": {
+                            "trackers": [{
+                                "pixel": "MuteLive",
+                                "type": "img"
+                            }]
+                        },
+                        "unmute": {
+                            "trackers": [{
+                                "pixel": "UnmuteLive",
+                                "type": "img"
+                            }]
+                        },
+                        "paused": {
+                            "trackers": [{
+                                "pixel": "PauseLive",
+                                "type": "img"
+                            }]
+                        },
+                        "rewind": {
+                            "trackers": [{
+                                "pixel": "RewindLive",
+                                "type": "img"
+                            }]
+                        },
+                        "resume": {
+                            "trackers": [{
+                                "pixel": "ResumeLive",
+                                "type": "img"
+                            }]
+                        },
+                        "replay": {
+                            "trackers": [{
+                                "pixel": "ReplayLive",
+                                "type": "img"
+                            }]
+                        },
+                        "fullscreen": {
+                            "trackers": [{
+                                "pixel": "FSLive",
+                                "type": "img"
+                            }]
+                        }
+                    },
+
+
+                },
+                'phaze': {
+                    //                'exploremore_mainunit_click': {
+                    //                    custom1: 'ExploreMore',
+                    //                    'referrer': 'MainUnit',
+                    //                    'trigger': 'Click',
+                    //                    trackers: [{
+                    //                        "type": "img",
+                    //                        pixel: 'Stage'
+                    //                    }]
+                    //                },
+                    'transition_teaser_closead': {
+                        custom1: 'collapsedTeaser',
+                        'referrer': 'Teaser',
+                        'trigger': 'CloseAd',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    'transition_paused-teaser_closead': {
+                        custom1: 'PausedCollapsedTeaser',
+                        'referrer': 'PausedTeaser',
+                        'trigger': 'CloseAd',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    'transition_paused-collapsed-teaser_click': {
+                        custom1: 'Transition2VPM',
+                        'referrer': 'PausedCollapsedTeaser',
+                        'trigger': 'Click',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    'transition_collapsed-teaser_click': {
+                        custom1: 'VPM',
+                        'referrer': 'Transition2VPM',
+                        'trigger': 'Click',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    'transition_teaser_mouseover': {
+                        custom1: 'Transition2VPM',
+                        'referrer': 'Teaser',
+                        'trigger': 'MouseOver',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    'transition_collapsed-teaser_mouseover': {
+                        custom1: 'Transition2VPM',
+                        'referrer': 'CollapsedTeaser',
+                        'trigger': 'MouseOver',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+
+                    //                'transition_teaser_timecomplete': {
+                    //                    custom1: 'VPM',
+                    //                    'referrer': 'Transition2VPM',
+                    //                    'trigger': 'TransitionComplete',
+                    //                    trackers: [{
+                    //                        "type": "img",
+                    //                        pixel: 'Stage'
+                    //                    }]
+                    //                },
+                    'transition_teaser_click': { //not done
+                        custom1: 'VPM',
+                        'referrer': 'Transition2VPM',
+                        'trigger': 'Click',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    //Jordi, transition_transition_mouseout do you want to have this pixel, we can fire this event when user MouseOut before reaching VPM
+                    'transition_teaser_mouseout': { //not done
+                        custom1: 'Teaser',
+                        'referrer': 'Transition2Teaser',
+                        'trigger': 'MouseOut',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    'transition_collapsed-teaser_mouseout': {
+                        custom1: 'Teaser',
+                        'referrer': 'Transition2Teaser',
+                        'trigger': 'MouseOut',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    'transition_vpm_click': {
+                        custom1: 'Transition2MainUnit',
+                        'referrer': 'VPM',
+                        'trigger': 'Click',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    'transition_vpm_timecomplete': {
+                        custom1: 'Transition2MainUnit',
+                        'referrer': 'VPM',
+                        'trigger': 'TimeComplete',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+
+                    'transition_paused-teaser_click': {
+                        custom1: 'Transition2VPM',
+                        'referrer': 'PausedTeaser',
+                        'trigger': 'Click',
+                        trackers: [{
+                            "type": "img",
+                            pixel: 'Stage'
+                        }]
+                    },
+                    //                'mainunit_loaded': {
+                    //                    custom1: 'MainUnit',
+                    //                    'referrer': 'VPM',
+                    //                    'trigger': 'loaded',
+                    //                    trackers: [{
+                    //                        "type": "img",
+                    //                        pixel: 'Stage'
+                    //                    }]
+                    //                }
+
+                }
+            };
+
+
+            /*============================================================== Pixel configuration ends ========================================================*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*-------------------------------------------------------- DON'T TOUCH ANYTHING BELOW THIS LINE --------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*---------------------------------------------------------------------- WARNING -----------------------------------------------------------------*/
+            /*-------------------------------------------------------- DON'T TOUCH ANYTHING BELOW THIS LINE --------------------------------------------------*/
+
+
+            var pixelInfo = {
+                host: "$WEBSERVERHOST$",
+                campaignName: "<mediaName>($MEDIAID$)",
+                insPrefixUrl: "/insights/impression?client=$CLIENTID$&campaign=",
+                insMidUrl: "&mediaSource=VDX&mediaSubSource=Display&creative=queryParams.wxqueryParams.h&event=",
+                insSuffixUrl: "&ord=$RND$&custom2=buyID:$BUYID$;mediaID:$MEDIAID$;ord:$RND$;td:@TIMEDIFFERENCE@;adspaceId:$ADSPACEID$&custom3=$DEVICEPROP$",
+                deviceProperties: ""
+            };
+
+            window['currentE9' + rnd] = this.e9;
+
+            window['adUnitReadConfig_' + rnd] = function(sandbox, done) {
+                var adID = rnd;
+                var initWindow = window;
+                var tokens = "?namejs=creative.3.0.js&namecss=creative.3.0.css"
+
+                window['adConfig_' + rnd] = {
+                    "debug6Interval": 2000,
+                    "isFireDebug6": false,
+                    "isViewableTimeSpend": false,
+                    "env": "dev",
+                    "divid": (this.env === "dev" ? "adContainer" : "$ADCONTAINERID$"),
+                    "initWindow": initWindow,
+                    "productName": "VDX_1.1",
+                    "id": adID,
+                    "uniqueId": '$RND$',
+                    "e9": window['currentE9' + rnd],
+                    "mediaWidth": queryParams.w + "px",
+                    "mediaHeight": queryParams.h + "px",
+                    "location": (this.env === "dev" ? "./" : location),
+                    "assetUrl": (this.env === "dev" ? "./" : assetUrl),
+                    "museUrl": (this.env === "dev" ? "./" : museUrl),
+                    "plugins": [{
+                        "type": 'plugin',
+                        name: "externalCom"
+                    }, {
+                        "type": 'plugin',
+                        name: "videoLibrary"
+                    }],
+                    "tagOptions": typeof($TAGOPTIONS$) !==
+                        "undefined" ? $TAGOPTIONS$ : {},
+                    "pixelInfo": pixelInfo,
+                    "style": {
+                        'border': '1px solid #000000'
+                    },
+                    "isEnableFloat": true,
+                    "resetLayoutTime": 8000,
+                    "locale": 'en',
+                    "branding": 'Exponential',
+                    "isMaintainAspectRatio": false,
+                    "media": {
+                        "dir": "creative.html" + tokens,
+                        "parseDir": "$LOCPARSE$",
+                        "commonDir": "$COMMON$",
+                        "manifestDir": "",
+                        "frameworkVersion": ""
+                    },
+                    "teaser": {
+                        "970x250": {
+                            standard: {
+                                video: {
+                                    id: "video1", //defined in videos section
+                                    x: -50,
+                                    y: -100,
+                                    scaledWidth: 1020,
+                                    scaledHeight: 600
+                                }
+                            },
+                            collapsed: {
+                                video: {
+                                    id: "video2", //defined in videos section
+                                    x: -50,
+                                    y: -313,
+                                    scaledWidth: 1020,
+                                    scaledHeight: 600
+                                }
+                            }
+                        },
+                        "160x600": {
+                            standard: {
+                                video: {
+                                    id: "video1", //defined in videos section
+                                    x: -50,
+                                    y: -100,
+                                    scaledWidth: 300,
+                                    scaledHeight: 700
+                                },
+                            }
+                        },
+                        "728x90": {
+                            standard: {
+                                video: {
+                                    id: "video1", //defined in videos section
+                                    x: -50,
+                                    y: -100,
+                                    scaledWidth: 900,
+                                    scaledHeight: 200
+                                },
+                            }
+                        },
+                        "300x250": {
+                            standard: {
+                                video: {
+                                    id: "video1", //defined in videos section
+                                    x: -50,
+                                    y: -100,
+                                    scaledWidth: 400,
+                                    scaledHeight: 400
+                                },
+                            }
+                        },
+                        "300x600": {
+                            standard: {
+                                video: {
+                                    id: "video1", //defined in videos section
+                                    x: -50,
+                                    y: -100,
+                                    scaledWidth: 400,
+                                    scaledHeight: 700
+                                },
+                            }
+                        },
+                        "zindex": 10,
+                        "width": queryParams.w,
+                        "height": queryParams.h,
+                        "sizes": [{
+                            "width": 1024,
+                            "height": 90
+                        }, {
+                            "width": 768,
+                            "height": 90
+                        }, {
+                            "width": 2048,
+                            "height": 180
+                        }, {
+                            "width": 1536,
+                            "height": 180
+                        }],
+                        "background": {
+                            "color": "#000000"
+                        },
+
+                        "biteImage": false,
+                        "template": {
+                            "isTrueClickEnable": true,
+                            "trueClickSpan": -1,
+                            "closeButtonScale": 4
+                        },
+
+                        "clicks": {},
+                        "videos": {
+                            "TabletPortrait": {
+                                "name": "TabletPortrait.mpg",
+                                'device': 'tablet'
+                            },
+                            "TabletLandscape": {
+                                "name": "TabletLandscape.mpg",
+                                'device': 'tablet'
+                            }
+                        }
+                    },
+                    "fullscreen": {
+                        'width': 970,
+                        'height': 546,
+                        "zindex": 2147483635,
+                        "disableScroll": true,
+                        "mainUnitBGColor": "",
+                        "transitionToMainUnit": 1000,
+                        "VPMSpeedPerMs": 5,
+                        "enableExploreMore": false,
+                        "closeBtnImg": {
+                            "src": '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="37px" height="38px" viewBox="0 0 37 38" enable-background="new 0 0 37 38" xml:space="preserve"><image overflow="visible" width="37" height="38" xlink:href="data:image/png;base64,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"></image></svg>',
+                            "width": 37,
+                            "height": 38,
+                            "top": 23,
+                            "right": 23
+                        },
+                        "trackers": window['fullscreenTracker' + rnd],
+                    }
+
+
+                };
+                sandbox.adConfig = window['adConfig_' + rnd];
+                sandbox.widzardConfig = {
+                    "defaults": {
+                        "parameters": {
+                            "language": "en",
+                            "branding": "default"
+                        }
+                    },
+                    "teaser": {
+                        "execution": {
+                            "display": {
+                                "logo": "logoSmall.png",
+                                "160x600": {
+                                    "standard": {
+                                        "video": {
+                                            "x": -392,
+                                            "y": -86,
+                                            "scaledWidth": 1373,
+                                            "scaledHeight": 772
+                                        }
+                                    }
+                                },
+                                "728x90": {
+                                    "standard": {
+                                        "video": {
+                                            "x": -9,
+                                            "y": -157,
+                                            "scaledWidth": 745,
+                                            "scaledHeight": 419
+                                        }
+                                    }
+                                },
+                                "300x250": {
+                                    "standard": {
+                                        "video": {
+                                            "x": -141,
+                                            "y": -39,
+                                            "scaledWidth": 582,
+                                            "scaledHeight": 327
+                                        }
+                                    }
+                                },
+                                "300x600": {
+                                    "standard": {
+                                        "video": {
+                                            "x": -196,
+                                            "y": -86,
+                                            "scaledWidth": 691,
+                                            "scaledHeight": 771
+                                        }
+                                    }
+                                },
+                                "970x250": {
+                                    "standard": {
+                                        "video": {
+                                            "x": -6,
+                                            "y": -151,
+                                            "scaledWidth": 982,
+                                            "scaledHeight": 553
+                                        }
+                                    },
+                                    "collapsed": {
+                                        "video": {
+                                            "x": -4,
+                                            "y": -181,
+                                            "scaledWidth": 976,
+                                            "scaledHeight": 464
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                };
+
+
+                done();
+            };
+
+            var pubCore = {};
+            pubCore.name = "VDX_" + rnd;
+            pubCore.testParam = "lookForThis";
+            pubCore.env = "dev";
+            pubCore.id = rnd;
+            pubCore.richmediaCommonDir = "";
+            pubCore.core_version = "1.0.3";
+            pubCore.plugin_version = "1.9.0";
+            pubCore.render_version = "1.9.0";
+            pubCore.isCountAfterPlay = true;
+            pubCore.pixelInfo = pixelInfo;
+            pubCore.teaser = {};
+            pubCore.fullScreen = {};
+            pubCore.teaser.trackers = window["teaserTracker" + rnd];
+            //---CustomTrackers: Start---
+
+            pubCore.urlConfig = {
+                "Logo": "http://www.lexus.com",
+                "VisitSite": "http://www.lexus.com/models/IS",
+                "CustomDesign": "http://www.lexus.com/models/IS/features"
+            };
+
+            pubCore.customTrackers = {
+                "VideosTab": {
+                    "custom1": "VideosTab",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ExteriorTab": {
+                    "custom1": "ExteriorTab",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab": {
+                    "custom1": "InteriorTab",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab": {
+                    "custom1": "GalleryTab",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "View360Tab": {
+                    "custom1": "View360Tab",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ExploreTab": {
+                    "custom1": "ExploreTab",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ColorsTab": {
+                    "custom1": "ColorsTab",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ExteriorTab_PreviousBTN": {
+                    "custom1": "ExteriorTab_PreviousBTN",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ExteriorTab_NextBTN": {
+                    "custom1": "ExteriorTab_NextBTN",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_PreviousBTN": {
+                    "custom1": "InteriorTab_PreviousBTN",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_NextBTN": {
+                    "custom1": "InteriorTab_NextBTN",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_Thumb1": {
+                    "custom1": "InteriorTab_Thumb1",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_Thumb2": {
+                    "custom1": "InteriorTab_Thumb2",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_Thumb3": {
+                    "custom1": "InteriorTab_Thumb3",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_Thumb4": {
+                    "custom1": "InteriorTab_Thumb4",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_Thumb5": {
+                    "custom1": "InteriorTab_Thumb5",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_Thumb6": {
+                    "custom1": "InteriorTab_Thumb6",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_Thumb7": {
+                    "custom1": "InteriorTab_Thumb7",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_Thumb8": {
+                    "custom1": "InteriorTab_Thumb8",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_Thumb9": {
+                    "custom1": "InteriorTab_Thumb9",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_Thumb10": {
+                    "custom1": "InteriorTab_Thumb10",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "InteriorTab_Thumb11": {
+                    "custom1": "InteriorTab_Thumb11",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_PreviousBTN": {
+                    "custom1": "GalleryTab_PreviousBTN",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_NextBTN": {
+                    "custom1": "GalleryTab_NextBTN",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_Thumb1": {
+                    "custom1": "GalleryTab_Thumb1",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_Thumb2": {
+                    "custom1": "GalleryTab_Thumb2",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_Thumb3": {
+                    "custom1": "GalleryTab_Thumb3",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_Thumb4": {
+                    "custom1": "GalleryTab_Thumb4",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_Thumb5": {
+                    "custom1": "GalleryTab_Thumb5",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_Thumb6": {
+                    "custom1": "GalleryTab_Thumb6",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_Thumb7": {
+                    "custom1": "GalleryTab_Thumb7",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_Thumb8": {
+                    "custom1": "GalleryTab_Thumb8",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_Thumb9": {
+                    "custom1": "GalleryTab_Thumb9",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_Thumb10": {
+                    "custom1": "GalleryTab_Thumb10",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "GalleryTab_Thumb11": {
+                    "custom1": "GalleryTab_Thumb11",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "View360Tab_PreviousBTN": {
+                    "custom1": "View360Tab_PreviousBTN",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "View360Tab_NextBTN": {
+                    "custom1": "View360Tab_NextBTN",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ExploreTab_PopUp1": {
+                    "custom1": "ExploreTab_PopUp1",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ExploreTab_PopUp2": {
+                    "custom1": "ExploreTab_PopUp2",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ExploreTab_PopUp3": {
+                    "custom1": "ExploreTab_PopUp3",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ColorsTab_Eminent_White_Pearl": {
+                    "custom1": "ColorsTab_Eminent_White_Pearl",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ColorsTab_Nebula_Gray_Pearl": {
+                    "custom1": "ColorsTab_Nebula_Gray_Pearl",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ColorsTab_Silver_Lining_Metallic": {
+                    "custom1": "ColorsTab_Silver_Lining_Metallic",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ColorsTab_Atomic_Silver": {
+                    "custom1": "ColorsTab_Atomic_Silver",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ColorsTab_Obsidian": {
+                    "custom1": "ColorsTab_Obsidian",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "ColorsTab_Redline": {
+                    "custom1": "ColorsTab_Redline",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "intLive",
+                        "type": "img"
+                    }]
+                },
+                "Logo": {
+                    "custom1": "Logo",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "clickLive",
+                        "type": "img"
+                    }]
+                },
+                "VisitSite": {
+                    "custom1": "VisitSite",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "clickLive",
+                        "type": "img"
+                    }]
+                },
+                "CustomDesign": {
+                    "custom1": "CustomDesign",
+                    "multi": false,
+                    "trackers": [{
+                        "pixel": "clickLive",
+                        "type": "img"
+                    }]
+                }
+            };
+            //---CustomTrackers: End---
+            pubCore.fullScreen.trackers = window['fullscreenTracker' + rnd];
+
+            pubCore.dependencies = [
+
+                {
+                    "type": 'plugin',
+                    name: 'dummyLogger',
+                    "version": "1.9.0"
+                },
+
+                {
+                    "type": 'plugin',
+                    name: 'messages',
+                    "version": "1.0.0"
+                }, {
+                    "type": 'plugin',
+                    name: 'dimensionHelper',
+                    "version": "1.0.0"
+                },
+
+                {
+                    "type": 'plugin',
+                    name: 'framebuster',
+                    "version": "1.9.0"
+                },
+
+                {
+                    "type": 'render',
+                    name: 'render',
+                    "version": "1.9.0"
+                }, {
+                    "type": 'plugin',
+                    name: 'sniffer',
+                    "version": "1.0.0"
+                }, {
+                    "type": 'plugin',
+                    name: 'selfServeAdapter',
+                    "version": "1.9.0"
+                }, {
+                    "type": 'plugin',
+                    name: 'adChoice',
+                    "version": "1.9.0"
+                }, {
+                    "type": 'plugin',
+                    name: 'pubEventManager',
+                    "version": "1.0.0"
+                }
+            ];
+
+            //pubCore.jsFiles=["unified_rectangle.js"];
+
+
+            pubCore.init_load_callback = window["adUnitReadConfig_" + rnd];
+            window["tf_richmedia"] = window["tf_richmedia"] || [];
+            window["tf_richmedia"].push(pubCore);
+            if (typeof EXPO_PUB !== "undefined") {
+                EXPO_PUB.initPub(pubCore);
+            }
+            // version 2
+
+        })();
+    </script>
+<div id="adContainer"></div></body></html>

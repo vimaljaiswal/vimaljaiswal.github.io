@@ -1,0 +1,138 @@
+<manifest alg="2" build="2015.2.1.352" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="lexus.com" resolutions="1x" timestamp="1478340214006">
+  <folder name="css">
+    <file name="site_global.css" crc="3916556066"/>
+    <file name="master_a-master.css" crc="190639918" ref="index"/>
+    <file name="index.css" crc="358834135" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <folder name="customdesign">
+      <folder name="images">
+        <file name="bg.jpg" crc="3783703238" mt="1475038967000"/>
+        <file name="CustomDesign_atlas_.png" crc="4146693847" mt="1475038967000"/>
+      </folder>
+      <file name="CustomDesign.js" crc="77216914" mt="1475038967000"/>
+      <file name="CustomDesign.html" crc="4211038482" mt="1475038967000"/>
+    </folder>
+    <file name="video1.mp4" crc="328938105" seo="true" mt="1472538795000"/>
+    <file name="video1.jpg" crc="167045598" seo="true" mt="1472538795000"/>
+    <file name="video2.mp4" crc="4006942730" seo="true" mt="1472538795000"/>
+    <file name="video2.jpg" crc="527627206" seo="true" mt="1472538795000"/>
+    <file name="video3.mp4" crc="4261808897" seo="true" mt="1472538795000"/>
+    <file name="video3.jpg" crc="503182869" seo="true" mt="1472538795000"/>
+    <file name="video4.mp4" crc="495202094" seo="true" mt="1472538795000"/>
+    <file name="video4.jpg" crc="3942428612" seo="true" mt="1472538795000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="index"/>
+    <file name="museutils.js" crc="3851988764" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="169177150" ref="index"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="index"/>
+    <file name="require.js" crc="4108833657" ref="index"/>
+    <file name="pie.js" crc="3831537696" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="index"/>
+    <file name="webpro.js" crc="4067903014" ref="index"/>
+    <file name="musewpslideshow.js" crc="4265225696" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="4075157096" ref="index"/>
+    <file name="touchswipe.js" crc="474750357" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="nav-arrow.png" crc="288636753" seo="true" ref="index"/>
+    <file name="cd2.jpg" crc="48421772" ref="index"/>
+    <file name="isexterior1.jpg" crc="495871228" ref="index"/>
+    <file name="isexterior2.jpg" crc="4166194776" ref="index"/>
+    <file name="isexterior3.jpg" crc="3836264845" ref="index"/>
+    <file name="isexterior4.jpg" crc="3824249314" ref="index"/>
+    <file name="isexterior5.jpg" crc="3948770002" ref="index"/>
+    <file name="isexterior6.jpg" crc="206603575" ref="index"/>
+    <file name="isexterior7.jpg" crc="4258516159" ref="index"/>
+    <file name="isexterior8.jpg" crc="79364657" ref="index"/>
+    <file name="isexterior9.jpg" crc="3963475535" ref="index"/>
+    <file name="isexterior10.jpg" crc="4041865437" ref="index"/>
+    <file name="isexterior11.jpg" crc="3806894539" ref="index"/>
+    <file name="arrow-left.png" crc="268996519" ref="index"/>
+    <file name="arrow-right.png" crc="4256333355" ref="index"/>
+    <file name="isinterior1-u478-fr.jpg" crc="3926936976" ref="index"/>
+    <file name="isinterior2-u477-fr.jpg" crc="496972043" ref="index"/>
+    <file name="isinterior3-u469-fr.jpg" crc="3812164892" ref="index"/>
+    <file name="isinterior4-u473-fr.jpg" crc="4055021526" ref="index"/>
+    <file name="isinterior5-u476-fr.jpg" crc="4069308824" ref="index"/>
+    <file name="isinterior6-u474-fr.jpg" crc="3969051164" ref="index"/>
+    <file name="isinterior7-u471-fr.jpg" crc="160670826" ref="index"/>
+    <file name="isinterior8-u472-fr.jpg" crc="94345691" ref="index"/>
+    <file name="isinterior9-u468-fr.jpg" crc="4253294584" ref="index"/>
+    <file name="isinterior10-u470-fr.jpg" crc="4149604349" ref="index"/>
+    <file name="isinterior11-u475-fr.jpg" crc="4005957090" ref="index"/>
+    <file name="isinterior1.jpg" crc="4267396698" ref="index"/>
+    <file name="isinterior2.jpg" crc="531076421" ref="index"/>
+    <file name="isinterior3.jpg" crc="4254535124" ref="index"/>
+    <file name="isinterior4.jpg" crc="299527287" ref="index"/>
+    <file name="isinterior5.jpg" crc="288943166" ref="index"/>
+    <file name="isinterior6.jpg" crc="3845782154" ref="index"/>
+    <file name="isinterior7.jpg" crc="490154322" ref="index"/>
+    <file name="isinterior8.jpg" crc="331854371" ref="index"/>
+    <file name="isinterior9.jpg" crc="36604575" ref="index"/>
+    <file name="isinterior10.jpg" crc="176414698" ref="index"/>
+    <file name="isinterior11.jpg" crc="374037117" ref="index"/>
+    <file name="isfexterior1.jpg" crc="16791628" ref="index"/>
+    <file name="isfexterior2.jpg" crc="4225725712" ref="index"/>
+    <file name="isfexterior3.jpg" crc="4167916906" ref="index"/>
+    <file name="isfexterior4.jpg" crc="4092687585" ref="index"/>
+    <file name="isfexterior5.jpg" crc="3780129390" ref="index"/>
+    <file name="isfexterior6.jpg" crc="4250196947" ref="index"/>
+    <file name="isfexterior7.jpg" crc="309586794" ref="index"/>
+    <file name="isfexterior8.jpg" crc="3895207817" ref="index"/>
+    <file name="isfexterior9.jpg" crc="170579265" ref="index"/>
+    <file name="isfexterior10.jpg" crc="3975587565" ref="index"/>
+    <file name="isfexterior11.jpg" crc="216725558" ref="index"/>
+    <file name="fsunittab4spinimg14_png_m0.png" crc="3918379556" ref="index"/>
+    <file name="fsunittab4spinimg1_png_m0.png" crc="3944700645" ref="index"/>
+    <file name="fsunittab4spinimg2_png_m0.png" crc="3963539721" ref="index"/>
+    <file name="fsunittab4spinimg3_png_m0.png" crc="258448725" ref="index"/>
+    <file name="fsunittab4spinimg4_png_m0.png" crc="310165107" ref="index"/>
+    <file name="fsunittab4spinimg5_png_m0.png" crc="274583799" ref="index"/>
+    <file name="fsunittab4spinimg6_png_m0.png" crc="8078444" ref="index"/>
+    <file name="fsunittab4spinimg7_png_m0.png" crc="214757631" ref="index"/>
+    <file name="fsunittab4spinimg8_png_m0.png" crc="21782167" ref="index"/>
+    <file name="fsunittab4spinimg9_png_m0.png" crc="140407189" ref="index"/>
+    <file name="fsunittab4spinimg10_png_m0.png" crc="259675667" ref="index"/>
+    <file name="fsunittab4spinimg11_png_m0.png" crc="4005415420" ref="index"/>
+    <file name="fsunittab4spinimg12_png_m0.png" crc="3881709901" ref="index"/>
+    <file name="fsunittab4spinimg13_png_m0.png" crc="3761350454" ref="index"/>
+    <file name="fsunittab4spinimg15_png_m0.png" crc="3792506715" ref="index"/>
+    <file name="fsunittab4spinimg16_png_m0.png" crc="3880427257" ref="index"/>
+    <file name="fsunittab4spinimg17_png_m0.png" crc="417524543" ref="index"/>
+    <file name="fsunittab4spinimg18_png_m0.png" crc="43497820" ref="index"/>
+    <file name="left-arrow.png" crc="3960689271" ref="index"/>
+    <file name="right-arrow.png" crc="4203431628" ref="index"/>
+    <file name="explore2.jpg" crc="4105154434" seo="true" ref="index"/>
+    <file name="img3.jpg" crc="4283279414" seo="true" ref="index"/>
+    <file name="img1.jpg" crc="3906275105" seo="true" ref="index"/>
+    <file name="img2.jpg" crc="3912413685" seo="true" ref="index"/>
+    <file name="1.jpg" crc="3843105184" ref="index"/>
+    <file name="2.jpg" crc="4060004141" ref="index"/>
+    <file name="3.jpg" crc="4100944443" ref="index"/>
+    <file name="4.jpg" crc="4113622024" ref="index"/>
+    <file name="5.jpg" crc="135478794" ref="index"/>
+    <file name="6.jpg" crc="443235080" ref="index"/>
+    <file name="ewp-large-1.jpg" crc="264333739" ref="index"/>
+    <file name="ngp-large-1.jpg" crc="3769919037" ref="index"/>
+    <file name="slm-large-1.jpg" crc="4045689447" ref="index"/>
+    <file name="as-large-1.jpg" crc="267251678" ref="index"/>
+    <file name="o-large-1.jpg" crc="20541713" ref="index"/>
+    <file name="r-large-1.jpg" crc="3915911769" ref="index"/>
+    <file name="vdxby.png" crc="139547171" ref="index"/>
+    <file name="lexus_logo.png" crc="4136418226" seo="true" ref="index"/>
+    <file name="thumb1.jpg" crc="4052790912" ref="index"/>
+    <file name="thumb12.jpg" crc="477064275" ref="index"/>
+    <file name="playicon.png" crc="237086720" ref="index"/>
+    <file name="playicon-u2186-a-fr.png" crc="418670313" ref="index"/>
+    <file name="thumb2.jpg" crc="451385725" ref="index"/>
+    <file name="thumb3.jpg" crc="39550032" ref="index"/>
+    <file name="thumb4.jpg" crc="4207422571" ref="index"/>
+    <file name="thumb13.jpg" crc="4052790912" ref="index"/>
+    <file name="leftarrow.png" crc="4276234551" ref="index"/>
+    <file name="rightarrow.png" crc="191982985" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4248187885" seo="true" mt="1478340190468" redirect="true"/>
+</manifest>
