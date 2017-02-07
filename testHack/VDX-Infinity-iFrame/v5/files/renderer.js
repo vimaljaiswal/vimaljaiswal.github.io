@@ -14,7 +14,7 @@
 		   //$("#warning").fadeOut(13000);
 	
 		   
-		   showMainUnit(.001,.001,.001);
+		   callMainUnit(.001,.001,.001);
 
 		   timerImg();
            dragVideo = setTimeout(function () {
@@ -90,7 +90,7 @@
   if(trackMainUnitClosed == true){
 	   trackMainUnitClosed = false;
 	   displayText();
-	   showMainUnit(500,500,4400);
+	   callMainUnit(500,500,4400);
 	   $("#indicator").fadeIn(1000);
        document.getElementById("dividerBtn").style.left = 485 + "px";
        document.getElementById("videoContainerName").style.width = 485 + "px";
@@ -121,7 +121,7 @@
 	   document.getElementById("warning").style.visibility = "hidden"
    }
 
-   function showMainUnit(teaser2VPM,vpm2MainUnit,delayTime){
+   function callMainUnit(teaser2VPM,vpm2MainUnit,delayTime){
   // window.frames[2].frameElement.contentWindow.EXPO_CREATIVE_CONFIG_JSON.Core.transitions.teaser2VPM.duration = teaser2VPM;
    //window.frames[2].frameElement.contentWindow.EXPO_CREATIVE_CONFIG_JSON.Core.transitions.vpm2MainUnit.duration = vpm2MainUnit;
 	window.frames[2].frameElement.contentWindow.EXPO_CREATIVE_CONFIG_JSON.Core.states.VPM.delayTime = delayTime;
