@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VDX Infinity</title>
+    <link type="text/css" rel="stylesheet" href="./files/main3.css" media="all">
+    <!--- main CSS  -->
+    <script type="text/javascript" src="./files/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="./files/mixing.js"></script>
+    <script type="text/javascript" src="./files/main.js"></script>
+    <script type="text/javascript" src="./files/test.js"></script>
+    <script type="text/javascript" src="./files/renderer.js"></script>
+
+
+
+</head>
+
+<body onload="addEvents()">
+    <div class="iframeHolder" style="width:970px; height:250px;" id="bodyTag">
+        <div style="left: 279px; top:8px; position: absolute; visibility:hidden;" id="containerVideo">
+            <iframe src="template.html" class="ui-video-ContainerIframe" name="iFrameID" marginwidth=0 align="center" marginheight=0 hspace=0 vspace=0 frameBorder=0 scrolling=no allowTransparency=true style="width:100%; height:100%;" id="adLoader" ; onload="resetTeaser()"> </iframe>
+        </div>
+        <div class="container" style="visibility:visible; left:0%; position: relative; top:-15px; z-index:50" id="fiftyBan">
+            <div class="row">
+                <div class="col12 m-col12 s-col12 xs--col12">
+                    <div class="fifty50Banner"> <span id="dividerBtn" class="ui-draggable-handle" style="width: 2px; right: auto; left: 485px; top: 16px;">
+                        <span class="touchBtn"></span> <span id="indicator" style="visibility:hidden; display: inline; text-align: center;">Drag the button to Left &amp; Right<br><b>Explore More</b></span> <span id="warning" style="visibility:hidden; display: inline; text-align: center;">Your Content will Start in<br><b><var id="time">10</var> Seconds</b></span> <span id="blankDiv"></span> </span>
+                        <ul id="sliderCont">
+                            <li style="width: 485px; height: 250px;" id="videoLi">
+                                <div class="fiftyBanner" id="videoTab" style="cursor:pointer;">
+                                    <video loop video autoplay muted class="ui-video-Container" id="videoContainerName">
+                                        <source src="./assets/video1.mp4" type="video/mp4"> </video>
+										<script>
+var vid = document.getElementById("videoContainerName");
+vid.onloadeddata = function() {
+	displayText()
+    //alert("Browser has loaded the current frame");
+};
+</script>
+                                    <div class="caption">
+                                        <h4></h4> </div>
+                                </div>
+                            </li>
+                            <li style="width: 970px; height: 250px;">
+                                <div class="fiftyBanner" id="imageTab" style="cursor:pointer">
+                                    <iframe src="https://www.eyerevolution.co.uk/wp-content/virtual-tours/rangerover-lwb/" name="imgContainerName" marginwidth=0 align="center" marginheight=0 hspace=0 vspace=0 frameBorder=0 scrolling=no allowTransparency=true id="imgFrame" ;>
+                                        <div class="caption">
+                                            <h4 style="left: 61%;"></h4>
+                                            <p></p>
+                                        </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+		
+</body>
+
+</html>
