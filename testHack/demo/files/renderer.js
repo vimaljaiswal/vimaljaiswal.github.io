@@ -1,5 +1,6 @@
   // var dragVideo
    var dragImg
+   var dragVideo
    var ImgTimer;
    var trackMainUnitClosed = false;
    var countPosition = 485;
@@ -7,12 +8,18 @@
    function timerCalled(timer) {
        document.getElementById("warning").style.visibility = "visible"
        if (timer >= 485) {
+		   clearTimeout(dragVideo);
+		   clearInterval(ImgTimer);
+			clearTimeout(dragImg);
+		    dragVideo = setTimeout(function () {
            playTeaser();
+			},2000);
        }
        else {
            callMainUnit(.001, .001, .001);
-		   		    clearInterval(ImgTimer);
+		   clearInterval(ImgTimer);
 			clearTimeout(dragImg);
+			clearTimeout(dragVideo);
 
            timerImg();
            dragImg = setTimeout(function () {
