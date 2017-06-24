@@ -1,0 +1,294 @@
+<!--DesignerApi: Start-->
+
+<script type="text/xjavascript">
+
+
+(function(W) {
+    //=========== This section can be changed by designer =============//
+    var DAPI = EXPO_CREATIVE.require("designerAPI");
+    var isComingFromPlaylistEnd = false;
+    
+
+// playlist events  =============================
+
+var vdxPlaylistProp = {
+ 
+    totalVideosInPlaylist: 15,
+ 
+    onVideoStart : function(obj){
+        //console.log("videoStarted : "+obj.videoID);
+    },
+ 
+    onVideoEnd : function(obj){
+        //console.log("videoEnded : "+obj.videoID);
+    },
+ 
+    onPlaylistEnd : function(obj){
+         isComingFromPlaylistEnd = true;
+         //console.log("playlist end event triggered");
+         DAPI.fireInteractionPixel("test007");
+         anchorCLick("features");
+    }
+}
+
+// scroll events =============================
+
+var vdxScrollEvent = {
+ 
+        hideElmentsOnScroll : [],
+ 
+        onScrollStart : function(obj){
+            isComingFromPlaylistEnd = false;
+            designerAPIObject.clickedNavigation = false;
+            //console.log("_scrollStart");
+        },
+ 
+        onScrollEnd : function(obj){
+            //console.log("_scrollEnd");
+        },
+
+       onCardChange : function(obj){
+           if(designerAPIObject.clickedNavigation == false){
+           
+             if(obj.selectedCard=='videotab'){  //anchor name must be in lowercase
+              console.log("PixelName_VideoTab");
+                DAPI.fireInteractionPixel('PixelName_VideoTab'); 
+	         } 
+    
+	         else if(obj.selectedCard=='features' && !isComingFromPlaylistEnd){  
+                 console.log("PixelName_Features");
+                 DAPI.fireInteractionPixel('PixelName_Features');
+	         }
+      
+	         else if(obj.selectedCard=='exterior'){  
+                 console.log("PixelName_Exterior");
+                 DAPI.fireInteractionPixel('PixelName_Exterior');
+	         }
+           
+	         else if(obj.selectedCard=='interior'){  
+                  console.log("PixelName_Interior");
+                 DAPI.fireInteractionPixel('PixelName_Interior');
+	         }
+         
+	         else if(obj.selectedCard=='overview'){  
+                  console.log("PixelName_Overview");
+                 DAPI.fireInteractionPixel('PixelName_Overview');
+	         }
+           
+	         else if(obj.selectedCard=='view360'){  
+                  console.log("PixelName_360");
+                 DAPI.fireInteractionPixel('PixelName_View360');
+	         }
+           
+	         else if(obj.selectedCard=='colors'){  
+                  console.log("PixelName_color");
+                 DAPI.fireInteractionPixel('PixelName_Colors', true);
+	         }
+         
+	         else if(obj.selectedCard=='explore'){  
+                 console.log("PixelName_Explore");
+                 DAPI.fireInteractionPixel('PixelName_Explore');
+	         }
+           
+	         else if(obj.selectedCard=='offers'){  
+                  console.log("PixelName_Offers");
+                 DAPI.fireInteractionPixel('PixelName_Offers');
+	         }
+       }
+           
+       }}
+
+
+
+// Designer API  =============================
+
+ 
+var designerAPIObject = {
+ 
+     vdxPlaylistProp : vdxPlaylistProp,
+     vdxScrollEvent : vdxScrollEvent,
+     clickedNavigation : false,
+        
+// Navigation Tab Code =============================
+        
+        VideoTab:function() {
+            designerAPIObject.clickedNavigation = true;
+                anchorCLick('videotab');
+            },
+        Features:function() {
+           designerAPIObject.clickedNavigation = true;
+                anchorCLick('features');
+            },
+        Exterior:function() {
+            designerAPIObject.clickedNavigation = true;
+                anchorCLick('exterior');
+            },
+        Interior:function() {
+             designerAPIObject.clickedNavigation = true;
+                anchorCLick('interior');
+            },
+        Overview:function() {
+            designerAPIObject.clickedNavigation = true;
+                anchorCLick('overview');
+            },
+        View360:function() {
+                anchorCLick('view360');
+                designerAPIObject.clickedNavigation = true;
+                this.fireInteractionPixel("PixelName_View360");
+            },
+        Colors:function() {
+             designerAPIObject.clickedNavigation = true;
+            this.fireInteractionPixel("PixelName_Colors");
+                anchorCLick('colors');
+            },
+        Explore:function() {
+            designerAPIObject.clickedNavigation = true;
+            this.fireInteractionPixel('PixelName_Explore');
+                anchorCLick('explore');
+            },
+        Offers:function() {
+            designerAPIObject.clickedNavigation = true;
+                anchorCLick('offers');
+            },
+
+
+    
+    
+// CTA Tab Code =============================    
+    
+        logoClick:function() {
+                this.fireClickPixel("logoClick");
+                this.openUrl("http://www.exponential.com","logoClick");
+            },
+        viewInventory:function() {
+                this.fireClickPixel("ViewInventory");
+                this.openUrl("http://www.exponential.com","viewInventory");
+            },
+        visitSite:function() {
+                this.fireClickPixel("visitSite");
+                this.openUrl("http://www.exponential.com","visitSite");
+            },
+        moreOffers:function() {
+                this.fireClickPixel("moreOffers");
+                this.openUrl("http://www.exponential.com","moreOffers");
+            },
+        
+    
+    
+// playlist thumbnail code =============================
+        
+        PlayList_Thumb1: function() {
+            this.switchPlayerInTab('video1','videoContainer');
+            anchorCLick('videotab');
+         },
+        PlayList_Thumb2: function() {
+            this.switchPlayerInTab('video2','videoContainer');
+            anchorCLick('videotab');
+         },
+        PlayList_Thumb3: function() {
+            this.switchPlayerInTab('video3','videoContainer');
+            anchorCLick('videotab');
+         },
+        PlayList_Thumb4: function() {
+            this.switchPlayerInTab('video4','videoContainer');
+            anchorCLick('videotab');
+         },
+        PlayList_Thumb5: function() {
+             this.switchPlayerInTab('video5','videoContainer');
+             anchorCLick('videotab');
+         },
+        PlayList_Thumb6: function() {
+             this.switchPlayerInTab('video6','videoContainer');
+             anchorCLick('videotab');
+         },
+        PlayList_Thumb7: function() {
+             this.switchPlayerInTab('video7','videoContainer');
+             anchorCLick('videotab');
+         },
+        PlayList_Thumb8: function() {
+             this.switchPlayerInTab('video8','videoContainer');
+             anchorCLick('videotab');
+         },
+        PlayList_Thumb9: function() {
+             this.switchPlayerInTab('video9','videoContainer');
+             anchorCLick('videotab');
+         },
+        PlayList_Thumb10: function() {
+             this.switchPlayerInTab('video10','videoContainer');
+             anchorCLick('videotab');
+         },
+        PlayList_Thumb11: function() {
+             this.switchPlayerInTab('video11','videoContainer');
+             anchorCLick('videotab');
+         },
+        PlayList_Thumb12: function() {
+             this.switchPlayerInTab('video12','videoContainer');
+             anchorCLick('videotab');
+         },
+        PlayList_Thumb13: function() {
+             this.switchPlayerInTab('video13','videoContainer');
+             anchorCLick('videotab');
+         },
+        PlayList_Thumb14: function() {
+             this.switchPlayerInTab('video14','videoContainer');
+             anchorCLick('videotab');
+         },
+        PlayList_Thumb15: function() {
+             this.switchPlayerInTab('video15','videoContainer');
+             anchorCLick('videotab');
+         },
+        
+        
+// Accordion widget =============================
+        
+        HotelPartner:function() {
+                        this.fireInteractionPixel('HotelPartner');
+                    },
+        Technology:function() {
+                this.fireInteractionPixel('Technology');
+            },
+        Warranty:function() {
+                this.fireInteractionPixel('Warranty');
+            },
+
+        
+    
+// mainUnit close call back =============================
+        
+         mainUnitCloseCallback : function (callback,defaultVideoId) {
+               this.switchPlayerInTab(defaultVideoId,"videoContainer");  
+               window.switchTab(0);   // dont remove this
+               callback(); // dont remove this
+         }
+//console.log("clickedNavigation>>   "+designerAPI.clickedNavigation);
+     }
+    
+    
+    
+    
+    
+    
+    
+//====================Please do not change anything below =========//
+    
+   function setDesignerAPI() {
+        if(W.EXPO_CREATIVE){
+        var designerAPI = EXPO_CREATIVE.require('designerAPI');
+        if(designerAPI) {
+          designerAPI.setDesignerAPIObject(designerAPIObject)
+        }
+      }
+   }
+   if(W.EU) {
+    EU.EventManager.add('creativeFrameworkReady', function() {
+        setDesignerAPI();  
+    });
+    setDesignerAPI()
+    
+  }
+})(window)
+
+</script>
+
+
+<!--DesignerApi: End-->

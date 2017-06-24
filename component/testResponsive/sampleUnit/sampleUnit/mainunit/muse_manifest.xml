@@ -1,0 +1,504 @@
+<manifest alg="2" build="2017.0.2.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="exponential.com,tribalfusion.com" resolutions="1x" timestamp="1498152127930">
+  <folder name="css">
+    <file name="site_global.css" crc="443350757"/>
+    <file name="index.css" crc="4294487709" ref="index"/>
+    <file name="nomq_index.css" crc="510744147" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <file name="video1.mp4" crc="3795555214" seo="true" mt="1495187982000"/>
+    <file name="video1.jpg" crc="167045598" seo="true" mt="1495187982000"/>
+    <file name="video2.mp4" crc="3865089742" seo="true" mt="1495187982000"/>
+    <file name="video2.jpg" crc="527627206" seo="true" mt="1495187982000"/>
+    <file name="video3.mp4" crc="424519891" seo="true" mt="1495187982000"/>
+    <file name="video3.jpg" crc="503182869" seo="true" mt="1495187982000"/>
+    <file name="video4.mp4" crc="452206415" seo="true" mt="1495187982000"/>
+    <file name="video4.jpg" crc="3942428612" seo="true" mt="1495187982000"/>
+    <file name="video5.mp4" crc="356138618" seo="true" mt="1495187982000"/>
+    <file name="video5.jpg" crc="4234762098" seo="true" mt="1495187982000"/>
+    <file name="video6.mp4" crc="3912209745" seo="true" mt="1495187982000"/>
+    <file name="video6.jpg" crc="4266642911" seo="true" mt="1495187982000"/>
+    <file name="video7.mp4" crc="3763578460" seo="true" mt="1495187982000"/>
+    <file name="video7.jpg" crc="198187092" seo="true" mt="1495187982000"/>
+    <file name="video8.mp4" crc="466419854" seo="true" mt="1495187982000"/>
+    <file name="video8.jpg" crc="336765200" seo="true" mt="1495187982000"/>
+    <file name="video9.mp4" crc="3775017887" seo="true" mt="1495187982000"/>
+    <file name="video9.jpg" crc="197243735" seo="true" mt="1495187982000"/>
+    <file name="video10.mp4" crc="3865089742" seo="true" mt="1495187982000"/>
+    <file name="video10.jpg" crc="197568776" seo="true" mt="1495187982000"/>
+    <file name="video11.mp4" crc="424519891" seo="true" mt="1495187982000"/>
+    <file name="video11.jpg" crc="3999748009" seo="true" mt="1495187982000"/>
+    <file name="video12.mp4" crc="452206415" seo="true" mt="1495187982000"/>
+    <file name="video12.jpg" crc="226329497" seo="true" mt="1495187982000"/>
+    <file name="video13.mp4" crc="356138618" seo="true" mt="1495187982000"/>
+    <file name="video13.jpg" crc="3790937860" seo="true" mt="1495187982000"/>
+    <file name="video14.mp4" crc="3912209745" seo="true" mt="1495187982000"/>
+    <file name="video14.jpg" crc="523495529" seo="true" mt="1495187982000"/>
+    <file name="video15.mp4" crc="3763578460" seo="true" mt="1495187982000"/>
+    <file name="video15.jpg" crc="3955741211" seo="true" mt="1495187982000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="4232573551" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4152223963" ref="index"/>
+    <file name="webpro.js" crc="3770351119" ref="index"/>
+    <file name="musewpdisclosure.js" crc="347705465" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3880853905" ref="index"/>
+    <file name="musewpslideshow.js" crc="4244742588" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="432750910" ref="index"/>
+    <file name="touchswipe.js" crc="3912873526" ref="index"/>
+    <file name="jquery.watch.js" crc="3844535323" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="433634197" ref="index"/>
+    <file name="require.js" crc="4234670167" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="logo.png" crc="4111333200" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="close_musemenupro.png" crc="481936843" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="close_musemenuprob.png" crc="294924595" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="playicon.png" crc="4218761559" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="thumb5.jpg" crc="4227700826" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="thumb6.jpg" crc="243572018" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="thumb7.jpg" crc="511644967" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="thumb8.jpg" crc="4285092905" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="thumb10.jpg" crc="43070421" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="is.png" crc="190897261" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="price.jpg" crc="4047569907" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="isexterior1-u6974-fr.jpg" crc="44582115" ref="index"/>
+    <file name="isexterior2-u6965-fr.jpg" crc="4142635321" ref="index"/>
+    <file name="isexterior3-u6968-fr.jpg" crc="4063417502" ref="index"/>
+    <file name="isexterior4-u6969-fr.jpg" crc="363998775" ref="index"/>
+    <file name="isexterior5-u6971-fr.jpg" crc="4216767450" ref="index"/>
+    <file name="isexterior6-u6966-fr.jpg" crc="493996988" ref="index"/>
+    <file name="isexterior7-u6973-fr.jpg" crc="4032764188" ref="index"/>
+    <file name="isexterior8-u6967-fr.jpg" crc="432952659" ref="index"/>
+    <file name="isexterior9-u6972-fr.jpg" crc="490869789" ref="index"/>
+    <file name="isexterior10-u6970-fr.jpg" crc="4128739385" ref="index"/>
+    <file name="lexus-is-8-speed-sport-direct-shift-transmission-keyfeatures-1204x677-lex-isg-my17-0077-01-u6984-fr.jpg" crc="4256955958" ref="index"/>
+    <file name="lexus-is-2014-in-vehicle-tech-lfa-inspired-gauges-u6978-fr.jpg" crc="170021762" ref="index"/>
+    <file name="lexus-is-all-weather-drive-keyfeatures-1204x677-lex-isg-my17-0041-u6977-fr.jpg" crc="4018805296" ref="index"/>
+    <file name="lexus-is-f-sport-performance-keyfeatures-1204x677-lex-isg-my17-0007-01-u6982-fr.jpg" crc="4002037675" ref="index"/>
+    <file name="lexus-is-f-sport-styling-keyfeatures-1204x677-lex-isg-my17-0023-u6976-fr.jpg" crc="4220911529" ref="index"/>
+    <file name="lexus-is-headlamp-design-keyfeatures-1204x677-lex-isg-my17-0017-01-u6979-fr.jpg" crc="3871964564" ref="index"/>
+    <file name="lexus-is-lexus-enform-keyfeatures-1204x677-lex-isg-my17-0025-07-u6981-fr.jpg" crc="4176172851" ref="index"/>
+    <file name="lexus-is-performance-driving-modes-keyfeatures-1204x677-lex-isg-my17-0056-09-u6983-fr.jpg" crc="443737625" ref="index"/>
+    <file name="lexus-is-touch-based-climate-controls-keyfeatures-1204x677-lex-isg-my17-0025-04-u6985-fr.jpg" crc="3951102149" ref="index"/>
+    <file name="lexus-key-features-parts-service-1204x677-lex-csp-cy16-002701-u6980-fr.jpg" crc="3783611803" ref="index"/>
+    <file name="arrow-left.png" crc="268996519" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="arrow-right.png" crc="4256333355" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isexterior1.jpg" crc="220561562" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isexterior2.jpg" crc="319879068" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isexterior3.jpg" crc="4285152359" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isexterior4.jpg" crc="4288657728" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isexterior5.jpg" crc="246030345" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isexterior6.jpg" crc="331141803" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isexterior7.jpg" crc="4125477216" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isexterior8.jpg" crc="3948500980" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isexterior9.jpg" crc="4003405120" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isexterior10.jpg" crc="4280577503" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isinterior1-u13376-fr.jpg" crc="3791902995" ref="index"/>
+    <file name="isinterior2-u13374-fr.jpg" crc="4176172851" ref="index"/>
+    <file name="isinterior3-u13369-fr.jpg" crc="3886001164" ref="index"/>
+    <file name="isinterior4-u13373-fr.jpg" crc="214118484" ref="index"/>
+    <file name="isinterior5-u13372-fr.jpg" crc="3969785131" ref="index"/>
+    <file name="isinterior6-u13368-fr.jpg" crc="3962407868" ref="index"/>
+    <file name="isinterior7-u13370-fr.jpg" crc="3838776983" ref="index"/>
+    <file name="isinterior8-u13371-fr.jpg" crc="38132123" ref="index"/>
+    <file name="isinterior9-u13375-fr.jpg" crc="4160515093" ref="index"/>
+    <file name="isinterior10-u13367-fr.jpg" crc="4089734348" ref="index"/>
+    <file name="overview1.jpg" crc="140950100" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="overview2.jpg" crc="3967478822" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="overview3.jpg" crc="3847181366" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="overview4.jpg" crc="212601206" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="overview5.jpg" crc="400899848" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="overview6.jpg" crc="510854067" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="overview1-u8271-fr.jpg" crc="4181050159" ref="index"/>
+    <file name="overview2-u8270-fr.jpg" crc="439809277" ref="index"/>
+    <file name="overview3-u8273-fr.jpg" crc="500276098" ref="index"/>
+    <file name="overview4-u8274-fr.jpg" crc="3994404944" ref="index"/>
+    <file name="overview5-u8272-fr.jpg" crc="4167745976" ref="index"/>
+    <file name="overview6-u8269-fr.jpg" crc="4163563875" ref="index"/>
+    <file name="close-btn.png" crc="3892816062" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isexterior10-u14620-fr.png" crc="6400498" ref="index"/>
+    <file name="spinimg1.png" crc="3944700645" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg2.png" crc="3963539721" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg3.png" crc="258448725" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg4.png" crc="310165107" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg5.png" crc="274583799" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg6.png" crc="8078444" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg7.png" crc="214757631" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg8.png" crc="21782167" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg9.png" crc="140407189" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg10.png" crc="259675667" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg11.png" crc="4005415420" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg12.png" crc="3881709901" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg13.png" crc="3761350454" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg14.png" crc="3918379556" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg15.png" crc="3792506715" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg16.png" crc="3880427257" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg17.png" crc="417524543" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spinimg18.png" crc="43497820" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="left-arrow2.png" crc="341032472" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="right-arrow2.png" crc="88382128" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="360_arrow_gray_poster_.png" crc="301474409" ref="index" seo="true">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1eminent-white-pearl.png" crc="3920820669" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="2nebula-gray-pearl.png" crc="3954743490" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="3silver lining metallic.png" crc="4271775518" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="4atomic silver.png" crc="4259206796" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="5obsidian.png" crc="1381765" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="6redline.png" crc="25919523" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1.jpg" crc="3898132117" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="2.jpg" crc="447532550" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="3.jpg" crc="3944849255" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="4.jpg" crc="517793397" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="5.jpg" crc="3900245593" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="6.jpg" crc="4074554849" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lexus-is-sriracha-hero-gallery-overlay_1204x677_lex-isg-cy16-0059.jpg" crc="3876684696" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isexterior7-u18003-fr.jpg" crc="371571864" ref="index"/>
+    <file name="isfexterior6.jpg" crc="367980441" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isinterior5_00.jpg" crc="4152459536" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lexus-is-current-offers-hero-996x391-lex-isg-my17-0063-02.png" crc="393385444" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="price-buttonu1641-fr.jpg" crc="425864412" ref="index"/>
+    <file name="lexus-is-8-speed-sport-direct-shift-transmission-keyfeatures-1204x677-lex-isg-my17-0077-01.jpg" crc="108806283" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lexus-is-2014-in-vehicle-tech-lfa-inspired-gauges.jpg" crc="3845276961" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lexus-is-all-weather-drive-keyfeatures-1204x677-lex-isg-my17-0041.jpg" crc="185004426" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lexus-is-f-sport-performance-keyfeatures-1204x677-lex-isg-my17-0007-01.jpg" crc="82411667" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lexus-is-f-sport-styling-keyfeatures-1204x677-lex-isg-my17-0023.jpg" crc="4085803541" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lexus-is-headlamp-design-keyfeatures-1204x677-lex-isg-my17-0017-01.jpg" crc="295558420" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lexus-is-lexus-enform-keyfeatures-1204x677-lex-isg-my17-0025-07.jpg" crc="4092497938" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lexus-is-performance-driving-modes-keyfeatures-1204x677-lex-isg-my17-0056-09.jpg" crc="3776225082" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lexus-is-touch-based-climate-controls-keyfeatures-1204x677-lex-isg-my17-0025-04.jpg" crc="4082566909" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lexus-key-features-parts-service-1204x677-lex-csp-cy16-002701.jpg" crc="4272055499" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isinterior1.jpg" crc="4164964092" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isinterior2.jpg" crc="4092497938" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isinterior3.jpg" crc="3838365678" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isinterior4.jpg" crc="9743724" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isinterior5.jpg" crc="4159696869" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isinterior6.jpg" crc="4258060326" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isinterior7.jpg" crc="4174086057" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isinterior8.jpg" crc="3800038912" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isinterior9.jpg" crc="423041958" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="isinterior10.jpg" crc="3832147947" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="overview1-u8271-fr2.jpg" crc="412331765" ref="index"/>
+    <file name="overview2-u8270-fr2.jpg" crc="204367062" ref="index"/>
+    <file name="overview3-u8273-fr2.jpg" crc="3768031031" ref="index"/>
+    <file name="overview4-u8274-fr2.jpg" crc="4117736590" ref="index"/>
+    <file name="overview5-u8272-fr2.jpg" crc="17346934" ref="index"/>
+    <file name="overview6-u8269-fr2.jpg" crc="503317200" ref="index"/>
+    <file name="isexterior1-u6974-fr2.jpg" crc="420344221" ref="index"/>
+    <file name="isexterior2-u6965-fr2.jpg" crc="4172151812" ref="index"/>
+    <file name="isexterior3-u6968-fr2.jpg" crc="483310383" ref="index"/>
+    <file name="isexterior4-u6969-fr2.jpg" crc="4262608145" ref="index"/>
+    <file name="isexterior5-u6971-fr2.jpg" crc="3901079418" ref="index"/>
+    <file name="isexterior6-u6966-fr2.jpg" crc="104365187" ref="index"/>
+    <file name="isexterior7-u6973-fr2.jpg" crc="4248068759" ref="index"/>
+    <file name="isexterior8-u6967-fr2.jpg" crc="421188495" ref="index"/>
+    <file name="isexterior9-u6972-fr2.jpg" crc="4093617026" ref="index"/>
+    <file name="isexterior10-u6970-fr2.jpg" crc="4201473096" ref="index"/>
+    <file name="lexus-is-8-speed-sport-direct-shift-transmission-keyfeatures-1204x677-lex-isg-my17-0077-01-u6984-fr2.jpg" crc="4185349604" ref="index"/>
+    <file name="lexus-is-2014-in-vehicle-tech-lfa-inspired-gauges-u6978-fr2.jpg" crc="4197547250" ref="index"/>
+    <file name="lexus-is-all-weather-drive-keyfeatures-1204x677-lex-isg-my17-0041-u6977-fr2.jpg" crc="463143018" ref="index"/>
+    <file name="lexus-is-f-sport-performance-keyfeatures-1204x677-lex-isg-my17-0007-01-u6982-fr2.jpg" crc="166074247" ref="index"/>
+    <file name="lexus-is-f-sport-styling-keyfeatures-1204x677-lex-isg-my17-0023-u6976-fr2.jpg" crc="520718809" ref="index"/>
+    <file name="lexus-is-headlamp-design-keyfeatures-1204x677-lex-isg-my17-0017-01-u6979-fr2.jpg" crc="3997044585" ref="index"/>
+    <file name="lexus-is-lexus-enform-keyfeatures-1204x677-lex-isg-my17-0025-07-u6981-fr2.jpg" crc="4144232170" ref="index"/>
+    <file name="lexus-is-performance-driving-modes-keyfeatures-1204x677-lex-isg-my17-0056-09-u6983-fr2.jpg" crc="141473684" ref="index"/>
+    <file name="lexus-is-touch-based-climate-controls-keyfeatures-1204x677-lex-isg-my17-0025-04-u6985-fr2.jpg" crc="4205671882" ref="index"/>
+    <file name="lexus-key-features-parts-service-1204x677-lex-csp-cy16-002701-u6980-fr2.jpg" crc="4101387232" ref="index"/>
+    <file name="isexterior1-u7463-fr.jpg" crc="501441267" ref="index"/>
+    <file name="isexterior2-u7468-fr.jpg" crc="366816605" ref="index"/>
+    <file name="isexterior3-u7467-fr.jpg" crc="8922690" ref="index"/>
+    <file name="isexterior4-u7465-fr.jpg" crc="404447796" ref="index"/>
+    <file name="isexterior5-u7462-fr.jpg" crc="82107926" ref="index"/>
+    <file name="isexterior6-u7466-fr.jpg" crc="3806010182" ref="index"/>
+    <file name="isexterior7-u7461-fr.jpg" crc="4077818122" ref="index"/>
+    <file name="isexterior8-u7464-fr.jpg" crc="4200206730" ref="index"/>
+    <file name="isexterior9-u7460-fr.jpg" crc="47613819" ref="index"/>
+    <file name="isexterior10-u7469-fr.jpg" crc="4157841539" ref="index"/>
+    <file name="isinterior1-u13376-fr2.jpg" crc="4236743248" ref="index"/>
+    <file name="isinterior2-u13374-fr2.jpg" crc="4144232170" ref="index"/>
+    <file name="isinterior3-u13369-fr2.jpg" crc="302713895" ref="index"/>
+    <file name="isinterior4-u13373-fr2.jpg" crc="369997502" ref="index"/>
+    <file name="isinterior5-u13372-fr2.jpg" crc="4180175948" ref="index"/>
+    <file name="isinterior6-u13368-fr2.jpg" crc="138160024" ref="index"/>
+    <file name="isinterior7-u13370-fr2.jpg" crc="3967270624" ref="index"/>
+    <file name="isinterior8-u13371-fr2.jpg" crc="4152550493" ref="index"/>
+    <file name="isinterior9-u13375-fr2.jpg" crc="3923094082" ref="index"/>
+    <file name="isinterior10-u13367-fr2.jpg" crc="3844070798" ref="index"/>
+    <file name="overview1-u8271-fr3.jpg" crc="269620792" ref="index"/>
+    <file name="overview2-u8270-fr3.jpg" crc="3815888275" ref="index"/>
+    <file name="overview3-u8273-fr3.jpg" crc="278577146" ref="index"/>
+    <file name="overview4-u8274-fr3.jpg" crc="3927704987" ref="index"/>
+    <file name="overview5-u8272-fr3.jpg" crc="3860152015" ref="index"/>
+    <file name="overview6-u8269-fr3.jpg" crc="3935647054" ref="index"/>
+    <file name="spinimg1-u14597-fr.png" crc="4068601493" ref="index"/>
+    <file name="spinimg2-u14595-fr.png" crc="3992316109" ref="index"/>
+    <file name="spinimg3-u14596-fr.png" crc="240999978" ref="index"/>
+    <file name="spinimg4-u14590-fr.png" crc="79589602" ref="index"/>
+    <file name="spinimg5-u14594-fr.png" crc="239888426" ref="index"/>
+    <file name="spinimg6-u14588-fr.png" crc="440445302" ref="index"/>
+    <file name="spinimg7-u14587-fr.png" crc="4121923355" ref="index"/>
+    <file name="spinimg8-u14592-fr.png" crc="269453466" ref="index"/>
+    <file name="spinimg9-u14586-fr.png" crc="493900663" ref="index"/>
+    <file name="spinimg10-u14584-fr.png" crc="4226992673" ref="index"/>
+    <file name="spinimg11-u14598-fr.png" crc="240958836" ref="index"/>
+    <file name="spinimg12-u14591-fr.png" crc="3870400717" ref="index"/>
+    <file name="spinimg13-u14589-fr.png" crc="4259810648" ref="index"/>
+    <file name="spinimg14-u14593-fr.png" crc="109666022" ref="index"/>
+    <file name="spinimg15-u14585-fr.png" crc="228658301" ref="index"/>
+    <file name="spinimg16-u14600-fr.png" crc="171977228" ref="index"/>
+    <file name="spinimg17-u14599-fr.png" crc="519148872" ref="index"/>
+    <file name="spinimg18-u14583-fr.png" crc="3949850631" ref="index"/>
+    <file name="1eminent-white-pearl-u15280-fr.png" crc="4125701895" ref="index"/>
+    <file name="2nebula-gray-pearl-u15278-fr.png" crc="42170280" ref="index"/>
+    <file name="3silver lining metallic-u15281-fr.png" crc="3876546125" ref="index"/>
+    <file name="4atomic silver-u15279-fr.png" crc="516546345" ref="index"/>
+    <file name="5obsidian-u15276-fr.png" crc="499074358" ref="index"/>
+    <file name="6redline-u15277-fr.png" crc="4267547086" ref="index"/>
+    <file name="lexus-is-sriracha-hero-gallery-overlay_1204x677_lex-isg-cy16-0059-u17968-fr.jpg" crc="3814607588" ref="index"/>
+    <file name="isexterior7-u18003-fr2.jpg" crc="133082587" ref="index"/>
+    <file name="isfexterior6-u18001-fr.jpg" crc="4235160247" ref="index"/>
+    <file name="isinterior5_00-u18002-fr.jpg" crc="19628225" ref="index"/>
+    <file name="lexus-is-current-offers-hero-996x391-lex-isg-my17-0063-02-u18652-fr.png" crc="333681843" ref="index"/>
+    <file name="iconaccordion.png" crc="3950225024" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="iconcss.png" crc="197873739" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icondesignerapi.png" crc="73545407" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="thumb7-buttonu26415-fr.jpg" crc="4158055611" ref="index"/>
+    <file name="thumb8-buttonu26407-fr.jpg" crc="495246309" ref="index"/>
+    <file name="thumb5-buttonu26402-fr.jpg" crc="4139959989" ref="index"/>
+    <file name="thumb6-buttonu26394-fr.jpg" crc="496359632" ref="index"/>
+    <file name="navarrow.png" crc="4212091256" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="playlist-u27173-fr.jpg" crc="508183819" ref="index"/>
+    <file name="thumb1-buttonu26450-fr.jpg" crc="3774822968" ref="index"/>
+    <file name="thumb2-buttonu26454-fr.jpg" crc="3831058527" ref="index"/>
+    <file name="thumb4-buttonu26446-fr.jpg" crc="4068817322" ref="index"/>
+    <file name="thumb9.jpg" crc="3827977646" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="thumb11.jpg" crc="3336798" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="thumb12.jpg" crc="3895421784" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="thumb13-buttonu26437-fr.jpg" crc="157844417" ref="index"/>
+    <file name="thumb14.jpg" crc="3971358229" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="thumb15.jpg" crc="23606688" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="thumb1-buttonu26450-fr2.jpg" crc="4279895653" ref="index"/>
+    <file name="thumb2-buttonu26454-fr2.jpg" crc="3823172382" ref="index"/>
+    <file name="thumb4-buttonu26446-fr2.jpg" crc="117703300" ref="index"/>
+    <file name="thumb13-buttonu26437-fr2.jpg" crc="26819968" ref="index"/>
+    <file name="thumb2-buttonu26454-fr3.jpg" crc="523993755" ref="index"/>
+    <file name="scrn-crm-sales-mobile-u27483-fr.jpg" crc="4149359876" ref="index"/>
+  </folder>
+  <file name="index.html" crc="59732013" seo="true" mt="1498152064635" redirect="true"/>
+</manifest>

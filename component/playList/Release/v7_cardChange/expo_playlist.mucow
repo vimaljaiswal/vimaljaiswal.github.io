@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+`<HTMLWidget>` is the top level element which all other elements
+will be a child of. It contains the attributes for the widget as
+a whole.
+developed by: vimal jaiswal
+-->
+<HTMLWidget name="VDXDesignerUtilityWidget_2.0.1" formatNumber="6"  localization="none" creator="Adobe Muse Team" minWidth="100" defaultWidth="100" defaultHeight="50">
+<!-- ! -->
+	<parameters>
+
+<info label="GuideLines:
+1: Anchor Names will start with 'vdxanchor_'
+
+2: All Anchor name must be in lowercase.
+
+3: '!isComingFromPlaylistEnd' condition in needed to be used on anchor point defined on onPlaylistEnd event."
+
+		/>
+
+<!--
+maximum breakpoint
+-->
+
+
+<!--
+`width` is the width of the pageitem within Muse
+-->
+		<builtIn name="width"/>
+<!--
+`height` is the height of the pageitem within Muse
+-->
+		<builtIn name="height"/>
+<!--
+`itemUID` is the unique ID for this page item. It can be used as a CSS selector to limit CSS styling to just this widget.
+-->
+		<builtIn name="itemUID"/>
+<!-- ! -->
+
+
+
+	</parameters>
+	
+
+
+
+<!--
+`headHTML` is HTML which will be injected into the <head> tag by Muse during output.
+This widget includes some CSS styling in the <head>, targetted to just the elements inside this widget.
+-->
+	<pageItemHTML>
+<!--
+Don't forget to wrap your content in a `<![CDATA[ ]]>` tag
+-->
+<![CDATA[
+<!-- ! -->
+	
+		
+]]>
+	</pageItemHTML>
+
+       
+
+<bodyEndHTML>
+
+
+<![CDATA[
+<script type="text/javascript">
+
+var vdxResponsivePlaylistWidget=function(){function vdxResponsivePlaylistWidget(){this.totalVideos=15,this.currentVideoID="video1",this.timeoutID,this.EOPCallback,this.EOVCallback,this.SOVCallback,this.activePlaylist=!1,this.videoObj={},this.playListThumbSelection,this.vPlayListThumb_show,this.vPlayListThumb_hide,this.vPlayListStack,this.playListThumbSelectionBack,this.vPlayListStackBack,this.currentStackThumbs,root=this,backwardCompatibility()}function triggerMouseEvent(t,e){var o=document.createEvent("MouseEvents");o.initEvent(e,!0,!0),t.dispatchEvent(o)}function backwardCompatibility(){document.querySelectorAll("div[title='vdxContainer_vPlayListThumb_show']").length>0?(root.playListThumbSelection="document.querySelector(\"div.breakpoint.active div[data-title*= 'PlayList_Thumb",root.playListThumbSelectionBack="']\")",root.vPlayListThumb_show="div[title=vdxContainer_vPlayListThumb_show]",root.vPlayListThumb_hide="div[title=vdxContainer_vPlayListThumb_hide]",root.vPlayListStack="\"div.breakpoint.active div[title='vdxContainer_vPlayListStack",root.vPlayListStackBack="Trigger']\""):(root.playListThumbSelection='document.querySelector("div.breakpoint.active div.vdxContainer_vPlayListThumb',root.playListThumbSelectionBack='")',root.vPlayListThumb_show="div.vdxContainer_vPlayListThumb_show",root.vPlayListThumb_hide="div.vdxContainer_vPlayListThumb_hide",root.vPlayListStack='"div.breakpoint.active div.vdxContainer_vPlayListStack',root.vPlayListStackBack='Trigger"')}function thumbEventListner(){for(var i=1;i<=root.totalVideos;i++){var thumbDiv=eval(root.playListThumbSelection+i+root.playListThumbSelectionBack);thumbDiv.getAttribute("data-title").match(/[\w-]*VDXEvents={event:'click',callbacks:['PlayList_Thumb[\w-]*/g)&&thumbDiv.addEventListener("click",thumbClickEv,!1)}}function thumbClickEv(){thumbSelection(this),setTimeout(selectStack,10)}function thumbSelection(el){for(var tempThumb,i=1;i<=root.totalVideos;i++)tempThumb=eval(root.playListThumbSelection+i+root.playListThumbSelectionBack),tempThumb.getAttribute("data-title").match(/[\w-]*VDXEvents={event:'click',callbacks:['PlayList_Thumb[\w-]*/g)&&(tempThumb==el&&(root.currentVideoID="video"+i),tempThumb.querySelector(root.vPlayListThumb_hide).style.opacity="1",tempThumb.querySelector(root.vPlayListThumb_show).style.opacity="0",tempThumb.style.cursor="pointer",tempThumb.style.pointerEvents="auto");el.style.cursor="auto",el.style.pointerEvents="none",el.querySelector(root.vPlayListThumb_show).style.opacity="1",el.querySelector(root.vPlayListThumb_hide).style.opacity="0",console.log("currentVideoID = "+root.currentVideoID)}function findStack(){for(var t=[],e=Math.round(root.currentVideoID.split("video").join("")),o=document.querySelectorAll("div.breakpoint.active div[title*='vdxContainer_vPlayListStack']"),i=0;i<o.length;i++)o[i].getAttribute("class").match(/[\w-]*Container rgba-background clearfix grpelem wp-panel[\w-]*/g)&&t.push(o[i].querySelectorAll("div[data-title*='VDXEvents=']").length);for(var r=1,l=t[0],n=1;n<=t.length;n++){for(var a=r;l>=a;a++)if(a>=e)return void(root.currentStackThumbs=n);r=l,l+=t[n]}}function selectStack(){if(document.querySelectorAll("div[title='vdxContainer_vPlayListThumb_show']").length>0){findStack();var stack=document.querySelector(eval(root.vPlayListStack+root.currentStackThumbs+root.vPlayListStackBack))}else var num=Math.round(root.currentVideoID.split("video").join("")),stack=document.querySelector("div.breakpoint.active div.vdxContainer_vPlayListStack"+Math.ceil(num/3)+"Trigger");triggerMouseEvent(stack,"mousedown"),triggerMouseEvent(stack,"mouseup")}function selectThumb(){var num=Math.round(root.currentVideoID.split("video").join("")),thumb=eval(root.playListThumbSelection+num+root.playListThumbSelectionBack);thumb.getAttribute("data-title").match(/[\w-]*VDXEvents={event:'click',callbacks:['PlayList_Thumb[\w-]*/g)&&thumbSelection(thumb)}function triggerOrientationChange(){selectStack(),selectThumb()}function handleOrientationChange(){clearTimeout(root.timeoutID),root.timeoutID=setTimeout(triggerOrientationChange,1e3)}function hideArrowOnLoad(){for(var i=1;i<=root.totalVideos;i++)tempThumb=eval(root.playListThumbSelection+i+root.playListThumbSelectionBack),tempThumb.getAttribute("data-title").match(/[\w-]*VDXEvents={event:'click',callbacks:['PlayList_Thumb[\w-]*/g)&&(1!=i?(tempThumb.querySelector(root.vPlayListThumb_hide).style.opacity="1",tempThumb.querySelector(root.vPlayListThumb_show).style.opacity="0"):(tempThumb.querySelector(root.vPlayListThumb_hide).style.opacity="0",tempThumb.querySelector(root.vPlayListThumb_show).style.opacity="1"))}var root;return vdxResponsivePlaylistWidget.prototype.selectVideoThumb=function(t){root.currentVideoID=t,selectStack(),selectThumb()},EU.EventManager.add("VideoPlayer_e_play",function(){root.currentVideoID=CM.requireComponent("VideoPlayer").getVideoSourceId(),root.selectVideoThumb(root.currentVideoID),root.SOVCallback&&(root.videoObj.videoID=root.currentVideoID,root.SOVCallback(root.videoObj))}),EU.EventManager.add("VideoPlayer_e_ended",function(){if(root.activePlaylist){root.currentVideoID=CM.requireComponent("VideoPlayer").getVideoSourceId();var t=Math.round(root.currentVideoID.split("video").join(""));root.EOVCallback&&(root.videoObj.videoID=root.currentVideoID,root.EOVCallback(root.videoObj)),t%root.totalVideos>0?CM.requireComponent("VideoPlayer").setVideo(null,"video"+(t+1),!0):t%root.totalVideos==0&&root.EOPCallback&&root.EOPCallback(root.videoObj)}}),vdxResponsivePlaylistWidget.prototype.render=function(){var t=EXPO_CREATIVE.require("designerAPI"),e=t.getDesignerApiObject().vdxPlaylistProp;root.totalVideos=e.totalVideosInPlaylist,hideArrowOnLoad(),root.EOPCallback=e.onPlaylistEnd,root.EOVCallback=e.onVideoEnd,root.SOVCallback=e.onVideoStart,this.activePlaylist=!0,thumbEventListner(),window.addEventListener("orientationchange",handleOrientationChange),window.addEventListener("resize",handleOrientationChange)},vdxResponsivePlaylistWidget}(),vdxScrollEventHandlerWidget=function(){function t(){this.hideElmentsOnScroll,this.initialCard="videotab",this.DAPI,a=this}function e(){if(a.hideElmentsOnScroll)for(var t=0;t<a.hideElmentsOnScroll.length;t++)a.hideElmentsOnScroll[t]&&(a.hideElmentsOnScroll[t].style.visibility="hidden")}function o(){if(a.hideElmentsOnScroll)for(var t=0;t<a.hideElmentsOnScroll.length;t++)a.hideElmentsOnScroll[t]&&(a.hideElmentsOnScroll[t].style.visibility="visible")}function i(){a.DAPI.onScrollStart&&a.DAPI.onScrollStart(),a.hideElmentsOnScroll=n(a.DAPI.hideElmentsOnScroll),e()}function r(t){a.DAPI.onScrollStart&&a.DAPI.onScrollEnd(t),o(),l(t)}function l(t){for(var e,o={},i=new Array,r=0;r<t.length;r++)i.push(t[r].inViewPercent);e=i.indexOf(Math.max.apply(Math,i));for(var l=0;l<i.length;l++)i[e]==i[l]&&(e=l);o={selectedCard:t[e].name,viewPercent:t[e].inViewPercent},o.selectedCard!=a.initialCard&&(a.DAPI.onCardChange(o),a.initialCard=o.selectedCard)}function n(t){var e,o=[];if(t){for(var i=0;i<t.length;i++)e=document.querySelector("div.breakpoint.active div."+t[i]),o[i]=e;return o}}var a;return t.prototype.render=function(){var t=EXPO_CREATIVE.require("designerAPI").getDesignerApiObject();t.onScrollStart=i,t.onScrollEnd=r,t.onCardChange=l,a.DAPI=t.vdxScrollEvent},t}();document.addEventListener("DOMContentLoaded",function(){(new vdxResponsivePlaylistWidget).render(),(new vdxScrollEventHandlerWidget).render()});
+
+</script>
+
+
+]]>
+</bodyEndHTML>
+
+
+</HTMLWidget>

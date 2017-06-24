@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+`<HTMLWidget>` is the top level element which all other elements
+will be a child of. It contains the attributes for the widget as
+a whole.
+developed by: vimal jaiswal
+-->
+<HTMLWidget name="Responsive Composition" formatNumber="6"  localization="none" creator="Adobe Muse Team" minWidth="153" defaultWidth="153" defaultHeight="39">
+<!-- ! -->
+	<parameters>
+<info 
+label="GuideLines:
+1: Use 'fitWidth' on first element of composition widget for stacked and scattered.
+2: Use 'popupContainer_expo' in case of lightBox.
+2: Height is not responsive.
+3: All composition widgets used will become responsive.
+4: Input the breakpoints value used."
+/>
+
+
+<!--
+maximum breakpoint
+-->
+<text name="myTextBox" defaultValue="[414,768,970]" label="Used Breakpoints:" toolTip="Enter the breakpoints used."multiline="false" />
+
+<!--
+`width` is the width of the pageitem within Muse
+-->
+		<builtIn name="width"/>
+<!--
+`height` is the height of the pageitem within Muse
+-->
+		<builtIn name="height"/>
+<!--
+`itemUID` is the unique ID for this page item. It can be used as a CSS selector to limit CSS styling to just this widget.
+-->
+		<builtIn name="itemUID"/>
+<!-- ! -->
+
+
+
+	</parameters>
+	
+
+
+
+<!--
+`headHTML` is HTML which will be injected into the <head> tag by Muse during output.
+This widget includes some CSS styling in the <head>, targetted to just the elements inside this widget.
+-->
+	<pageItemHTML>
+<!--
+Don't forget to wrap your content in a `<![CDATA[ ]]>` tag
+-->
+<![CDATA[
+<!-- ! -->
+	
+		
+]]>
+	</pageItemHTML>
+
+       
+
+<bodyEndHTML>
+
+
+<![CDATA[
+<script type="text/javascript">
+console.log({param_myTextBox});
+var museInput = {param_myTextBox};
+
+(function () {
+
+    window.addEventListener("load", function (event) {
+        var intervalSet = setInterval(function () {
+            if (window.Muse.assets.checked) {
+                setMuseInput(museInput);
+                buildJson(DupliAllowedBreakPoints);
+                resizeFn()();
+                clearInterval(intervalSet);
+            }
+        }, 0)
+    });
+
+    window.addEventListener("resize", function (event) {
+        removeInitails([parentDivStack, lightBoxDivStack]); // or use setInterval
+        if (count == 0) {
+            setTimeout(function () {
+                setMuseInput(museInput);
+                buildJson(DupliAllowedBreakPoints);
+                resizeFn()();
+                console.log("resized");
+            }, setTime);
+            count = -1;
+        }
+    });
+
+    var flag = 0;
+
+    function removeInitails(parentDivStack) {
+        //
+      
+          //  console.log(flag+"          <<<<<<<<<<<<<<<<<< flag");
+            for (var k = 0; k < parentDivStack.length; k++) {
+
+              //var subDiv = parentDivStack[k].querySelector('div');   
+//console.log((subDiv[k].getAttribute('class')));
+                for (var i = 0; i < parentDivStack[k].length; i++) {
+                 
+                    var subDiv = parentDivStack[k][i].querySelectorAll('div');
+                       
+                    for (var j = 0; j < subDiv.length; j++) {
+                        var elem = subDiv[j];
+                        elem.style.width = "";
+                       
+                        elem.style.left = "";
+           
+                        //if (elem.getAttribute('class') != 'LightboxContent') {
+                        //  console.log(elem.getAttribute('class'));
+                        //  elem.style.left = "";
+                        // }
+                    }
+                }
+            }
+   
+    
+    };
+
+
+    var count = 0;
+    var setTime = 500;
+    var totalRatioWidth;
+    var totalRatioHeight;
+    var parentDivStack;
+    var maxBreak;
+    var placePosition;
+    var lightBoxDivStack;
+    var AllowedBreakPoints;
+    var firstJson;
+    var bounds = [];
+    var pageW = window.innerWidth;
+   // var museInput = [414, 768, 970];
+    var DupliAllowedBreakPoints = [];
+    var lowestbreakpointPoint;
+
+    function setMuseInput(museInput) {
+        for (var i = 0; i < museInput.length - 1; i++) {
+            DupliAllowedBreakPoints.push(museInput[i]);
+        }
+        DupliAllowedBreakPoints.push(5000);
+    };
+
+    function buildJson(AllowedBreakPoints) {
+        var item1 = {}
+        item1["min"] = 320;
+        item1["max"] = AllowedBreakPoints[0];
+        item1["func"] = _compositionWidgetLoad;
+        bounds.push(item1);
+        for (i = 0; i < AllowedBreakPoints.length - 1; i++) {
+            var item = {}
+            item["min"] = AllowedBreakPoints[i] + 1;
+            item["max"] = AllowedBreakPoints[i + 1];
+            item["func"] = _compositionWidgetLoad;
+            bounds.push(item);
+        }
+        jsonString = JSON.stringify(bounds);
+        lowestbreakpointPoint = bounds[0].min;
+    };
+
+    function calMaxBreak() {
+        var maxBreake
+        var calcMaxBreak = document.querySelector("div.breakpoint.active");
+        var maxWidth = calcMaxBreak.getAttribute('data-max-width');
+        if (maxWidth == undefined) {
+            maxBreake = museInput[museInput.length - 1];
+        } else {
+            maxBreake = maxWidth;
+        }
+        return maxBreake;
+    };
+
+    function resizeFn() {
+        var lastBoundry; // cache the last boundry used
+        return function () {
+            var width = window.innerWidth;
+            var boundry, min, max;
+            for (var i = 0; i < bounds.length; i++) {
+                boundry = bounds[i];
+                min = boundry.min || Number.MIN_VALUE;
+                max = boundry.max || Number.MAX_VALUE;
+                if (width > min && width < max &&
+                    lastBoundry !== boundry) {
+                    lastBoundry = boundry;
+                    for (j = 0; j < DupliAllowedBreakPoints.length; j++) {
+                        if (DupliAllowedBreakPoints[j] == max) {
+                            var index = DupliAllowedBreakPoints.indexOf(DupliAllowedBreakPoints[j]);
+                            DupliAllowedBreakPoints.splice(index, 1);
+                            return boundry.func.call(boundry);
+                        }
+                    }
+                }
+            }
+        }
+    };
+
+
+    function assignProp(parentDivStack) {
+        for (var k = 0; k < parentDivStack.length; k++) {
+            for (var i = 0; i < parentDivStack[k].length; i++) {
+                var childDivs = parentDivStack[k][i].querySelectorAll('div');
+                for (var j = 0; j < childDivs.length; j++) {
+                    var childInitialWidth = childDivs[j].getAttribute('initailW')
+                    var childInitialLeft = childDivs[j].getAttribute('initaill');
+                    if (childInitialWidth != undefined) {
+                        if (childInitialWidth.slice(-1) === "%") {
+                            var newWidth = (parseFloat(childInitialWidth, 10) * totalRatioWidth) + "%";
+                        } else {
+                            var newWidth = ((parseFloat(childInitialWidth, 10) * totalRatioWidth) / 100) + "px";
+                        }
+                        childDivs[j].style.width = newWidth;
+                    }
+                    if (childInitialLeft != undefined) {
+                        if (childInitialLeft.slice(-1) === "%") {
+                            var newLeft = (parseFloat(childInitialLeft, 10) * totalRatioWidth);
+                            childDivs[j].style.left = newLeft + "%";
+                        }
+                        if (childInitialLeft == 'auto') {
+                            childDivs[j].style.left = childInitialLeft;
+                        } else {
+                            var newLeft = ((parseFloat(childInitialLeft, 10) * totalRatioWidth) / 100);
+                            childDivs[j].style.left = newLeft + "px";
+                        }
+                    }
+                }
+            }
+        }
+        count = 0;
+    };
+
+    function assignInitails(parentDivStack) {
+        for (var k = 0; k < parentDivStack.length; k++) {
+            for (var i = 0; i < parentDivStack[k].length; i++) {
+                var subDiv = parentDivStack[k][i].querySelectorAll('div');
+                for (var j = 0; j < subDiv.length; j++) {
+                    //  if ((subDiv[j].getAttribute('title') == 'fitWidth') || (subDiv[j].getAttribute('title') == 'popup')) {
+                    var elem = subDiv[j];
+                    style = window.getComputedStyle(elem);
+                    var styleLeft = style.getPropertyValue('left');
+                    var styleWidth = style.getPropertyValue('width');
+                    if (styleWidth != undefined) {
+                        elem.setAttribute('initailW', styleWidth);
+                    }
+                    if (styleLeft != undefined) {
+                        elem.setAttribute('initaill', styleLeft);
+                    }
+                }
+            }
+        }
+        // }
+    };
+
+    function _compositionWidgetLoad() {
+        setTimeout(function () {
+            pageW = window.innerWidth;
+            maxBreak = calMaxBreak();
+            totalRatioWidth = ((pageW / maxBreak) * 100); //browser
+            var selectActiveDiv = document.querySelector("div.breakpoint.active");
+            placePosition = selectActiveDiv.querySelector("div.clearfix.borderbox");
+            parentDivStack = selectActiveDiv.querySelectorAll("div.PamphletWidget");
+            lightBoxDivStack = document.querySelectorAll("div.LightboxContent");
+            placePosition.style.position = "relative";
+            assignInitails([parentDivStack, lightBoxDivStack]);
+            assignProp([parentDivStack, lightBoxDivStack]);
+        }, setTime);
+    };
+
+})();
+
+/*
+close,right button position on 2nd orientation
+*/
+
+</script>
+
+
+]]>
+</bodyEndHTML>
+
+
+</HTMLWidget>

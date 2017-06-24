@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+`<HTMLWidget>` is the top level element which all other elements
+will be a child of. It contains the attributes for the widget as
+a whole.
+developed by: vimal jaiswal
+-->
+<HTMLWidget name="Responsive Composition" formatNumber="6"  localization="none" creator="Adobe Muse Team" minWidth="153" defaultWidth="153" defaultHeight="39">
+<!-- ! -->
+	<parameters>
+<info 
+label="GuideLines:
+1: Use 'fitWidth' on first element of composition widget for stacked and scattered.
+2: Use 'popupContainer_expo' in case of lightBox.
+2: Height is not responsive.
+3: All composition widgets used will become responsive.
+4: Input the breakpoints value used."
+/>
+
+
+<!--
+maximum breakpoint
+-->
+<text name="myTextBox" defaultValue="[414,768,970]" label="Used Breakpoints:" toolTip="Enter the breakpoints used."multiline="false" />
+
+<!--
+`width` is the width of the pageitem within Muse
+-->
+		<builtIn name="width"/>
+<!--
+`height` is the height of the pageitem within Muse
+-->
+		<builtIn name="height"/>
+<!--
+`itemUID` is the unique ID for this page item. It can be used as a CSS selector to limit CSS styling to just this widget.
+-->
+		<builtIn name="itemUID"/>
+<!-- ! -->
+
+
+
+	</parameters>
+	
+
+
+
+<!--
+`headHTML` is HTML which will be injected into the <head> tag by Muse during output.
+This widget includes some CSS styling in the <head>, targetted to just the elements inside this widget.
+-->
+	<pageItemHTML>
+<!--
+Don't forget to wrap your content in a `<![CDATA[ ]]>` tag
+-->
+<![CDATA[
+<!-- ! -->
+	
+		
+]]>
+	</pageItemHTML>
+
+       
+
+<bodyEndHTML>
+
+
+<![CDATA[
+<script type="text/javascript">
+console.log({param_myTextBox});
+var museInput = {param_myTextBox};
+
+!function(){function t(t){for(var e=0;e<t.length;e++)for(var i=0;i<t[e].length;i++)for(var n=t[e][i].querySelectorAll("div"),r=0;r<n.length;r++){var l=n[r];l.style.width="",l.style.left=""}}function e(t){for(var e=0;e<t.length-1;e++)y.push(t[e]);y.push(5e3)}function n(t){var e={};for(e.min=320,e.max=t[0],e.func=u,w.push(e),i=0;i<t.length-1;i++){var n={};n.min=t[i]+1,n.max=t[i+1],n.func=u,w.push(n)}jsonString=JSON.stringify(w),h=w[0].min}function r(){var t,e=document.querySelector("div.breakpoint.active"),i=e.getAttribute("data-max-width");return t=void 0==i?museInput[museInput.length-1]:i}function l(){var t;return function(){for(var e,i,n,r=window.innerWidth,l=0;l<w.length;l++)if(e=w[l],i=e.min||Number.MIN_VALUE,n=e.max||Number.MAX_VALUE,r>i&&n>r&&t!==e)for(t=e,j=0;j<y.length;j++)if(y[j]==n){var o=y.indexOf(y[j]);return y.splice(o,1),e.func.call(e)}}}function o(t){for(var e=0;e<t.length;e++)for(var i=0;i<t[e].length;i++)for(var n=t[e][i].querySelectorAll("div"),r=0;r<n.length;r++){var l=n[r].getAttribute("initailW"),o=n[r].getAttribute("initaill");if(void 0!=l){if("%"===l.slice(-1))var a=parseFloat(l,10)*s+"%";else var a=parseFloat(l,10)*s/100+"px";n[r].style.width=a}if((n[r].getAttribute("class").match(/[\w-]*museBGSize[\w-]*/g)||n[r].getAttribute("class").match(/[\w-]*PamphletNextButton[\w-]*/g))&&void 0!=o){if("%"===o.slice(-1)){var u=parseFloat(o,10)*s;n[r].style.left=u+"%"}if("auto"==o)n[r].style.left=o;else{var u=parseFloat(o,10)*s/100;n[r].style.left=u+"px"}}}g=0}function a(t){for(var e=0;e<t.length;e++)for(var i=0;i<t[e].length;i++)for(var n=t[e][i].querySelectorAll("div"),r=0;r<n.length;r++){var l=n[r];if(!n[r].getAttribute("class").match(/[\w-]*shared_content[\w-]*/g)){style=window.getComputedStyle(l);var o=style.getPropertyValue("left"),a=style.getPropertyValue("width");void 0!=a&&l.setAttribute("initailW",a),void 0!=o&&l.setAttribute("initaill",o)}}}function u(){setTimeout(function(){p=window.innerWidth,f=r(),s=p/f*100;var t=document.querySelector("div.breakpoint.active");v=t.querySelector("div.clearfix.borderbox"),c=t.querySelectorAll("div.PamphletWidget"),d=document.querySelectorAll("div.LightboxContent"),v.style.position="relative",a([c,d]),o([c,d])},m)}window.addEventListener("load",function(){var t=setInterval(function(){window.Muse.assets.checked&&(e(museInput),n(y),l()(),clearInterval(t))},0)}),window.addEventListener("orientationchange",function(){0==g&&(t([c,d]),setTimeout(function(){e(museInput),n(y),l()()},m),g=-1)});var s,c,f,v,d,h,g=0,m=500,w=[],p=window.innerWidth,y=[]}();
+
+</script>
+
+
+]]>
+</bodyEndHTML>
+
+
+</HTMLWidget>

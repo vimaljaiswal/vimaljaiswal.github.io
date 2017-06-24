@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+`<HTMLWidget>` is the top level element which all other elements
+will be a child of. It contains the attributes for the widget as
+a whole.
+developed by: vimal jaiswal
+-->
+<HTMLWidget name="VDX_Responsive_Composition_1.0.0" formatNumber="6"  localization="none" creator="Component Development Team" minWidth="100" defaultWidth="100" defaultHeight="50">
+<!-- ! -->
+	<parameters>
+<info 
+label="GuideLines:
+1: Use 'fitWidth' on first element of composition widget for stacked and scattered.
+2: Use 'popup' in case of lightBox.
+2: Height is not responsive.
+3: All composition widgets used will become responsive.
+4: Input the breakpoints value used."
+/>
+
+
+<!--
+maximum breakpoint
+-->
+<text name="myTextBox" defaultValue="[414,768,970]" label="Used Breakpoints:" toolTip="Enter the breakpoints used."multiline="false" />
+
+<!--
+`width` is the width of the pageitem within Muse
+-->
+		<builtIn name="width"/>
+<!--
+`height` is the height of the pageitem within Muse
+-->
+		<builtIn name="height"/>
+<!--
+`itemUID` is the unique ID for this page item. It can be used as a CSS selector to limit CSS styling to just this widget.
+-->
+		<builtIn name="itemUID"/>
+<!-- ! -->
+
+
+
+	</parameters>
+	
+
+
+
+<!--
+`headHTML` is HTML which will be injected into the <head> tag by Muse during output.
+This widget includes some CSS styling in the <head>, targetted to just the elements inside this widget.
+-->
+	<pageItemHTML>
+<!--
+Don't forget to wrap your content in a `<![CDATA[ ]]>` tag
+-->
+<![CDATA[
+<!-- ! -->
+	
+		
+]]>
+	</pageItemHTML>
+
+       
+
+<bodyEndHTML>
+
+
+<![CDATA[
+<script type="text/javascript">
+
+var museInput = {param_myTextBox};
+
+!function(){function e(){var e=setInterval(function(){window.Muse.assets.checked&&(n(museInput),o(q),a()(),clearInterval(e))},0)}function t(){clearTimeout(A),clearTimeout(y),window.removeEventListener("load",e),A=setTimeout(function(){S=[],q=[],g=[],p="",w="",r([s,m]),n(museInput),o(q),a()(),clearTimeout(A)},b)}function r(e){for(var t=0;t<e.length;t++)for(var i=0;i<e[t].length;i++)for(var r=e[t][i].querySelectorAll("div"),n=0;n<r.length;n++){var o=r[n];o.style.width="",o.style.left=""}}function n(e){for(var t=0;t<e.length-1;t++)q.push(e[t]);q.push(5e3)}function o(e){var t={};for(t.min=320,t.max=e[0],t.func=v,S.push(t),i=0;i<e.length-1;i++){var r={};r.min=e[i]+1,r.max=e[i+1],r.func=v,S.push(r)}jsonString=JSON.stringify(S),w=S[0].min}function l(){var e,t=document.querySelector("div.breakpoint.active"),i=t.getAttribute("data-max-width");return e=void 0==i?museInput[museInput.length-1]:i}function a(){var e;return function(){for(var t,i,r,n=window.innerWidth,o=0;o<S.length;o++)if(t=S[o],i=t.min||Number.MIN_VALUE,r=t.max||Number.MAX_VALUE,n>i&&r>n&&e!==t)for(e=t,j=0;j<q.length;j++)if(q[j]==r){var l=q.indexOf(q[j]);return q.splice(l,1),t.func.call(t)}}}function u(e){for(var t=0;t<e.length;t++)for(var i=0;i<e[t].length;i++)for(var r=e[t][i].querySelectorAll("div"),n=0;n<r.length;n++){var o=r[n].getAttribute("initailW"),l=r[n].getAttribute("initaill");if(void 0!=o){if("%"===o.slice(-1))var a=parseFloat(o,10)*f+"%";else var a=parseFloat(o,10)*f/100+"px";r[n].style.width=a}if(void 0!=l){if("%"===l.slice(-1)){var u=parseFloat(l,10)*f;r[n].style.left=u+"%"}if("auto"==l)r[n].style.left=l;else{var u=parseFloat(l,10)*f/100;r[n].style.left=u+"px"}}}}function c(e){for(var t=0;t<e.length;t++)for(var i=0;i<e[t].length;i++)for(var r=e[t][i].querySelectorAll("div"),n=0;n<r.length;n++){var o=r[n];if(!r[n].getAttribute("class").match(/[\w-]*shared_content[\w-]*/g)){style=window.getComputedStyle(o);var l=style.getPropertyValue("left"),a=style.getPropertyValue("width");void 0!=a&&o.setAttribute("initailW",a),void 0!=l&&o.setAttribute("initaill",l)}}}function v(){clearTimeout(A),clearTimeout(y),y=setTimeout(function(){x=window.innerWidth,d=l(),f=x/d*100;var e=document.querySelector("div.breakpoint.active");h=e.querySelector("div.clearfix.borderbox"),s=e.querySelectorAll("div.PamphletWidget"),m=document.querySelectorAll("div.LightboxContent"),h.style.position="relative",c([s,m]),u([s,m]),clearTimeout(y)},b)}var f,s,d,h,m,g,p,w,y,A,b=500,S=[],x=window.innerWidth,q=[];window.addEventListener("load",e),window.addEventListener("orientationchange",t)}();
+
+</script>
+
+
+]]>
+</bodyEndHTML>
+
+
+</HTMLWidget>

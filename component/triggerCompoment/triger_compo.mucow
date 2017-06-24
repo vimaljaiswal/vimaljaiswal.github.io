@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+developed by: vimal jaiswal
+-->
+<HTMLWidget name="VDXExternalTrigger_1.0.0" formatNumber="6" localization="none" creator="Exponential Component Team" minWidth="100" defaultWidth="100" defaultHeight="50">
+	<!-- ! -->
+	<parameters>
+		<info label="GuideLines:
+1: Enter the names of the buttons used as external triggers, names will be vdxExternalTriggerBtn0, vdxExternalTriggerBtn1 ......
+
+2: Enter the names of the Triggers used simultaneously, names will be vdxExternalTriggerName0, vdxExternalTriggerName1 ......
+
+3: Give the names of buttons and triggers in hyperlink section."
+		/>
+
+
+		<text name="ButtonsNames" defaultValue="[]" label="Buttons Names" toolTip="Enter the names of the button used." multiline="false" />
+		<text name="TriggersNames" defaultValue="[]" label="Triggers Names" toolTip="Enter the names of the Triggers used." multiline="false" />
+
+		<builtIn name="width"/>
+	
+		<builtIn name="height"/>
+
+		<builtIn name="itemUID"/>
+	
+	</parameters>
+
+	<pageItemHTML>
+
+	
+		<![CDATA[
+
+		<!-- ! -->			
+		
+		]]>
+	</pageItemHTML>
+
+
+	<bodyEndHTML>
+		<![CDATA[
+
+
+<script type="text/javascript">
+
+var buttonsNames = {param_ButtonsNames};
+var triggersNames = {param_TriggersNames};
+
+function triggerMouseEvent(e,t){var n=document.createEvent("MouseEvents");n.initEvent(t,!0,!0),e.dispatchEvent(n)}var gDiv=function(e){var t=document.querySelector("div[title='"+e+"']");return t},triggerTab=function(e){var t=document.querySelector("div[title='"+e+"']");console.log("el"+t),triggerMouseEvent(t,"mousedown"),triggerMouseEvent(t,"mouseup")};document.addEventListener("DOMContentLoaded",function(){for(var e=0;e<buttonsNames.length;e++){var t=gDiv(buttonsNames[e]);t.addEventListener("click",function(){var e=Number(this.title.slice(-1));triggerTab(triggersNames[e])})}});
+
+</script>
+
+
+]]>
+	</bodyEndHTML>
+</HTMLWidget>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+`<HTMLWidget>` is the top level element which all other elements
+will be a child of. It contains the attributes for the widget as
+a whole.
+developed by: vimal jaiswal
+-->
+<HTMLWidget name="Responsive Composition" formatNumber="6"  localization="none" creator="Adobe Muse Team" minWidth="153" defaultWidth="153" defaultHeight="39">
+<!-- ! -->
+	<parameters>
+<info 
+label="GuideLines:
+1: Use 'fitWidth' on first element of composition widget for stacked and scattered.
+2: Use 'popupContainer_expo' in case of lightBox.
+2: Height is not responsive.
+3: All composition widgets used will become responsive.
+4: Input the breakpoints value used."
+/>
+
+
+<!--
+maximum breakpoint
+-->
+<text name="myTextBox" defaultValue="[414,768,970]" label="Used Breakpoints:" toolTip="Enter the breakpoints used."multiline="false" />
+
+<!--
+`width` is the width of the pageitem within Muse
+-->
+		<builtIn name="width"/>
+<!--
+`height` is the height of the pageitem within Muse
+-->
+		<builtIn name="height"/>
+<!--
+`itemUID` is the unique ID for this page item. It can be used as a CSS selector to limit CSS styling to just this widget.
+-->
+		<builtIn name="itemUID"/>
+<!-- ! -->
+
+
+
+	</parameters>
+	
+
+
+
+<!--
+`headHTML` is HTML which will be injected into the <head> tag by Muse during output.
+This widget includes some CSS styling in the <head>, targetted to just the elements inside this widget.
+-->
+
+
+       
+
+<bodyEndHTML>
+
+
+<![CDATA[
+<script type="text/javascript">
+console.log({param_myTextBox});
+var museInput = {param_myTextBox};
+
+!function(){function t(t){for(var e=0;e<t.length-1;e++)y.push(t[e]);y.push(5e3)}function e(t){var e={};for(e.min=320,e.max=t[0],e.func=u,m.push(e),i=0;i<t.length-1;i++){var n={};n.min=t[i]+1,n.max=t[i+1],n.func=u,m.push(n)}jsonString=JSON.stringify(m),h=m[0].min}function n(t,e){var i=t;return i=i.slice(0,-e)}function r(){var t,e=document.querySelector("div.breakpoint.active"),i=e.getAttribute("data-max-width");return t=void 0==i?museInput[museInput.length-1]:i}function o(){var t;return function(){for(var e,i,n,r=window.innerWidth,o=0;o<m.length;o++)if(e=m[o],i=e.min||Number.MIN_VALUE,n=e.max||Number.MAX_VALUE,r>i&&n>r&&t!==e)for(t=e,j=0;j<y.length;j++)if(y[j]==n){var l=y.indexOf(y[j]);return y.splice(l,1),e.func.call(e)}}}function l(t){for(var e=0;e<t.length;e++)for(var i=0;i<t[e].length;i++){var n=t[e][i].querySelectorAll("div");if(document.querySelector("div.breakpoint.active div[title='fitWidth']")||document.querySelector("div.LightboxContent div[title='popupContainer_expo']"))for(var r=0;r<n.length;r++){n[r].getAttribute("id");if("clearfix grpelem shared_content"!=n[r].getAttribute("class")){var l=n[r].getAttribute("initailW"),a=n[r].getAttribute("initaill"),u=l*s/100;if(void 0!=l&&("%"===l.slice(-1)?(u=l*s,n[r].style.width=u):n[r].style.width=u+"px"),void 0!=a){if("%"===a.slice(-1)){var d=a*s;n[r].style.left=d}if("auto"==a)n[r].style.left=a;else{var d=a*s/100;n[r].style.left=d+"px"}}}}}window.removeEventListener("resize",o()),console.log("assign out")}function a(t){for(var e=0;e<t.length;e++)for(var i=0;i<t[e].length;i++)for(var r=t[e][i].querySelectorAll("div"),o=0;o<r.length;o++){var l=r[o];if("clearfix grpelem shared_content"!=r[o].getAttribute("class")){style=window.getComputedStyle(l),top=style.getPropertyValue("left");var a=style.getPropertyValue("left"),u=style.getPropertyValue("width");void 0!=u&&("auto"==u||"%"===u.slice(-1)?l.setAttribute("initailW",u):l.setAttribute("initailW",n(u,2))),void 0!=a&&("auto"==a||"%"===a.slice(-1)?l.setAttribute("initaill",a):l.setAttribute("initaill",n(a,2)))}}console.log("initails out")}function u(){d()}function d(){setTimeout(function(){w=window.innerWidth,v=r(),s=w/v*100;var t=document.querySelector("div.breakpoint.active");f=t.querySelector("div.clearfix.borderbox"),c=t.querySelectorAll("div.PamphletWidget"),g=document.querySelectorAll("div.LightboxContent"),f.style.position="relative",a([c,g]),l([c,g])},p)}window.addEventListener("load",function(){var i=setInterval(function(){window.Muse.assets.checked&&(t(museInput),e(y),o()(),clearInterval(i))},0)}),window.addEventListener("resize",o()),window.addEventListener("orientationchange",function(){window.addEventListener("resize",o())});var s,c,v,f,g,h,p=500,m=[],w=window.innerWidth,y=[]}();
+
+
+</script>
+
+
+]]>
+</bodyEndHTML>
+
+<!--
+<script src="http://localhost/learning/practice/testResponsive/breakpoints/v4_scattered/scripts/test.js" type="text/javascript"></script>
+ -->
+</HTMLWidget>
