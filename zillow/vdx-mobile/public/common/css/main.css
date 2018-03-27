@@ -1,0 +1,190 @@
+root {
+	display: block;
+}
+
+body {
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+body > .banner-holder,
+.container .banner-holder {
+	position: relative;
+	z-index: 101;
+}
+
+.navbar {
+	z-index: 101;
+}
+
+.navbar-brand {
+	display: inline-block;
+	width: 220px;
+	height: 46px;
+	margin-top: 4px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	text-indent: 100%;
+	margin-right: 10px
+}
+
+.appsnack .navbar-brand {
+	background-image: url(../images/product/appsnack.png);
+}
+
+.firefly .navbar-brand {
+	background-image: url(../images/product/firefly.png);
+}
+
+.exponential .navbar-brand {
+	background-image: url(../images/product/exponential.png);
+}
+
+.adotube .navbar-brand {
+	background-image: url(../images/product/adotube.png);
+}
+
+.tribalfusion .navbar-brand {
+	background-image: url(../images/product/tribalfusion.png);
+}
+
+.none .navbar {
+	display: none;
+}
+
+.banner-wrap {
+	position: relative;
+}
+
+.banner-wrap.block-overlayed .banner-holder {
+	position: absolute;
+	left: 0;
+	top: -10px;
+	right: 0;
+	bottom: 0;
+	padding-left: 60px;
+	background-color: rgba(255, 248, 227, 1);
+	z-index: 101;
+}
+
+.banner-container {
+	z-index: 1;
+	position: relative
+}
+
+.small-thumbs h3 {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.small-thumbs p {
+	font-size: 11px;
+}
+
+#publisher-wrap {
+	position: relative;
+}
+
+.overlay {
+	background-color: rgba(245, 253, 255, 0.7);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+}
+
+#publisher-wrap * {
+	color: rgba(0, 0, 0, 0)
+}
+
+#publisher-wrap .z-word {
+	color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	margin-top: 3px
+}
+
+#publisher-wrap p span.z-word {
+	font-size: 10px;
+}
+
+#publisher-wrap h1 span.z-word,
+#publisher-wrap h2 span.z-word,
+#publisher-wrap h3 span.z-word,
+#publisher-wrap h4 span.z-word,
+#publisher-wrap h5 span.z-word,
+#publisher-wrap h6 span.z-word {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#publisher-wrap .publisher-header {
+	color: #444;
+	font-size: 30px;
+}
+
+.publisher-navigation {
+	float: right;
+	margin-top: 25px;
+	margin-bottom: 10px
+}
+
+.publisher-header {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	margin-bottom: 10px;
+}
+
+.publisher-logo {
+	float: left
+}
+
+.hide {
+	display: none;
+}
+/* Changing product specific div's z-index to overcome overlay issue */
+
+div[id^=tf_container],
+div[id^=tf_sidekick_skin] {
+	z-index: 101 !important;
+}
+
+div[id^=tf_main_unit_ctn_above] {
+	position: relative;
+	z-index: 101 !important;
+}
+
+div[id^=TFIBVstaticDiv] {
+	z-index: 0 !important;
+}
+/* Large desktop */
+
+@media (min-width: 1200px) {}
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 769px) and (max-width: 979px) {}
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 15px;
+	}
+	h2 {
+		font-size: 14px;
+	}
+	h3 {
+		font-size: 11px;
+	}
+	h4 {
+		font-size: 9px;
+	}
+	p {
+		font-size: 7px
+	}
+}
+/* Landscape phones and down */
+
+@media (max-width: 480px) {}
